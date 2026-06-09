@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "projet": "FIFA 2026 Watch",
+    "description": "Suivi des scandales et controverses liés à la Coupe du Monde FIFA 2026",
+    "derniere_mise_a_jour": "2026-06-09",
+    "version": "1.0.0"
+  },
+  "scandales": [
+    {
+      "id": 1,
+      "titre": "Droits TV : opacité des négociations",
+      "date": "2025-11-14",
+      "categorie": "Corruption",
+      "gravite": "haute",
+      "statut": "en cours",
+      "description": "Des négociations opaques autour des droits télévisés pour plusieurs marchés émergents soulèvent des questions sur la transparence des contrats FIFA.",
+      "pays_concernes": ["Brésil", "Mexique", "Maroc"],
+      "sources": [
+        { "titre": "The Athletic", "url": "https://theathletic.com" },
+        { "titre": "FIFA Watchdog Report", "url": "#" }
+      ],
+      "tags": ["droits-tv", "opacité", "contrats"]
+    },
+    {
+      "id": 2,
+      "titre": "Stades temporaires : surcoûts non justifiés",
+      "date": "2025-12-03",
+      "categorie": "Infrastructure",
+      "gravite": "moyenne",
+      "statut": "vérifié",
+      "description": "Plusieurs villes hôtes américaines rapportent des dépassements budgétaires importants pour la construction de structures temporaires imposées par la FIFA.",
+      "pays_concernes": ["États-Unis"],
+      "sources": [
+        { "titre": "AP News", "url": "https://apnews.com" }
+      ],
+      "tags": ["stades", "budget", "surcoût", "usa"]
+    },
+    {
+      "id": 3,
+      "titre": "Conditions de travail des bénévoles",
+      "date": "2026-01-22",
+      "categorie": "Droits humains",
+      "gravite": "haute",
+      "statut": "en cours",
+      "description": "Des organisations de défense des droits dénoncent les conditions imposées aux bénévoles : contrats contraignants, absence de couverture assurance, horaires excessifs.",
+      "pays_concernes": ["Canada", "États-Unis", "Mexique"],
+      "sources": [
+        { "titre": "Amnesty International", "url": "https://amnesty.org" },
+        { "titre": "Human Rights Watch", "url": "https://hrw.org" }
+      ],
+      "tags": ["bénévoles", "droits", "travail"]
+    },
+    {
+      "id": 4,
+      "titre": "Billetterie : revente et marché noir",
+      "date": "2026-03-10",
+      "categorie": "Billetterie",
+      "gravite": "moyenne",
+      "statut": "allégation",
+      "description": "Des milliers de billets auraient été détournés vers des revendeurs non officiels via des failles dans le système de billetterie en ligne de la FIFA.",
+      "pays_concernes": ["International"],
+      "sources": [
+        { "titre": "BBC Sport", "url": "https://bbc.com/sport" }
+      ],
+      "tags": ["billets", "revente", "fraude"]
+    },
+    {
+      "id": 5,
+      "titre": "Partenariat pétrolier : greenwashing accusé",
+      "date": "2026-04-05",
+      "categorie": "Sponsoring",
+      "gravite": "moyenne",
+      "statut": "confirmé",
+      "description": "La FIFA signe un partenariat majeur avec un géant pétrolier malgré les critiques des groupes environnementaux et les engagements climatiques officiels du tournoi.",
+      "pays_concernes": ["International"],
+      "sources": [
+        { "titre": "The Guardian", "url": "https://theguardian.com" },
+        { "titre": "Greenpeace", "url": "https://greenpeace.org" }
+      ],
+      "tags": ["sponsor", "pétrole", "environnement", "greenwashing"]
+    }
+  ]
+}

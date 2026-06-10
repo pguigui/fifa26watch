@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FIFA 2026 Watch — Scandales & Controverses</title>
+  <title>FIFA 2026 Watch — Scandals & Controversies</title>
   <style>
     :root {
       --bg:      #0d1117;
@@ -40,14 +40,33 @@
     .logo { font-size: 2rem; }
     header h1 { font-size: 1.4rem; font-weight: 700; color: var(--accent); }
     header p  { font-size: .85rem; color: var(--muted); margin-top: 3px; }
-    #total-badge {
+
+    #lang-btn {
       margin-left: auto;
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: .75rem;
+      font-weight: 700;
+      padding: .3rem .7rem;
+      border-radius: 4px;
+      cursor: pointer;
+      letter-spacing: .05em;
+      transition: all .15s;
+      flex-shrink: 0;
+    }
+    #lang-btn:hover {
+      background: rgba(201,162,39,.12);
+    }
+
+    #total-badge {
       background: var(--red);
       color: #fff;
       font-size: .75rem;
       font-weight: 700;
       padding: .3rem .75rem;
       border-radius: 999px;
+      flex-shrink: 0;
     }
 
     /* ── Filters ── */
@@ -99,7 +118,7 @@
     .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: .5rem; }
     .card-header h2 { font-size: 1rem; font-weight: 600; line-height: 1.45; }
 
-    /* Gravité pills */
+    /* Severity pills */
     .gravite {
       font-size: .68rem; font-weight: 700;
       padding: .2rem .55rem; border-radius: 999px;
@@ -112,12 +131,6 @@
     /* Meta row */
     .card-meta { display: flex; gap: .4rem; flex-wrap: wrap; font-size: .73rem; color: var(--muted); }
     .meta-pill { background: rgba(255,255,255,.05); border-radius: 4px; padding: .15rem .45rem; }
-
-    /* Statut color */
-    .s-confirmé   { color: var(--red); }
-    .s-vérifié    { color: var(--orange); }
-    .s-allégation { color: var(--muted); }
-    .s-en-cours   { color: var(--blue); }
 
     .card p { font-size: .875rem; color: var(--muted); line-height: 1.65; }
 
@@ -162,89 +175,152 @@
   <span class="logo">⚽</span>
   <div>
     <h1>FIFA 2026 Watch</h1>
-    <p>Journalisme citoyen — Scandales &amp; controverses de la Coupe du Monde 2026</p>
+    <p id="header-subtitle"></p>
   </div>
-  <span id="total-badge">— cas</span>
+  <button id="lang-btn"></button>
+  <span id="total-badge">—</span>
 </header>
 
 <div class="filters" id="filters"></div>
 
 <main id="grid"></main>
-<p id="empty">Aucun résultat pour ce filtre.</p>
+<p id="empty"></p>
 
-<footer>
-  Source : <code>data/scandales.json</code> &mdash; Projet open source, à but informatif uniquement.
-</footer>
+<footer id="footer"></footer>
 
 <script type="module">
-  const STATUT_CLS = {
-    "confirmé":   "s-confirmé",
-    "vérifié":    "s-vérifié",
-    "allégation": "s-allégation",
-    "en cours":   "s-en-cours",
+  const I18N = {
+    fr: {
+      subtitle:  "Journalisme citoyen — Scandales & controverses de la Coupe du Monde 2026",
+      all:       "Tous",
+      cases:     "cas",
+      sources:   "Sources :",
+      empty:     "Aucun résultat pour ce filtre.",
+      footer:    "Source : data/scandales.json — Projet open source, à but informatif uniquement.",
+      langBtn:   "EN",
+      sev:       { haute: "HAUTE", moyenne: "MOYENNE", basse: "BASSE" },
+      cat: {
+        securite:      "Sécurité",
+        gouvernance:   "Gouvernance",
+        visa:          "Visa",
+        corruption:    "Corruption",
+        droits:        "Droits",
+        economie:      "Économie",
+        environnement: "Environnement"
+      }
+    },
+    en: {
+      subtitle:  "Citizen journalism — Scandals & controversies at the 2026 FIFA World Cup",
+      all:       "All",
+      cases:     "cases",
+      sources:   "Sources:",
+      empty:     "No results for this filter.",
+      footer:    "Source: data/scandales.json — Open source project, for informational purposes only.",
+      langBtn:   "FR",
+      sev:       { haute: "HIGH", moyenne: "MEDIUM", basse: "LOW" },
+      cat: {
+        securite:      "Security",
+        gouvernance:   "Governance",
+        visa:          "Visa",
+        corruption:    "Corruption",
+        droits:        "Rights",
+        economie:      "Economics",
+        environnement: "Environment"
+      }
+    }
   };
-
-  async function init() {
-    const { scandales } = await fetch("data/scandales.json").then(r => r.json());
-
-    document.getElementById("total-badge").textContent = `${scandales.length} cas`;
-
-    // Build filters
-    const cats = ["Tous", ...new Set(scandales.map(s => s.categorie))];
-    const filtersEl = document.getElementById("filters");
-    cats.forEach(cat => {
-      const btn = document.createElement("button");
-      btn.className = "filter-btn" + (cat === "Tous" ? " active" : "");
-      btn.textContent = cat;
-      btn.addEventListener("click", () => {
-        filtersEl.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        render(scandales, cat);
-      });
-      filtersEl.appendChild(btn);
-    });
-
-    render(scandales, "Tous");
-  }
 
   const SEVERITE_LABEL = { 5: "haute", 4: "haute", 3: "moyenne", 2: "basse", 1: "basse" };
 
-  function render(all, filter) {
-    const items = filter === "Tous" ? all : all.filter(s => s.categorie === filter);
-    const grid  = document.getElementById("grid");
-    const empty = document.getElementById("empty");
+  let lang = localStorage.getItem('lang') ||
+             (navigator.language.startsWith('fr') ? 'fr' : 'en');
+  let scandales    = [];
+  let currentFilter = null;
 
-    grid.innerHTML = "";
-    empty.style.display = items.length ? "none" : "block";
+  function t(key) { return I18N[lang][key]; }
+
+  function applyLang() {
+    document.documentElement.lang = lang;
+    document.getElementById('lang-btn').textContent        = t('langBtn');
+    document.getElementById('header-subtitle').textContent = t('subtitle');
+    document.getElementById('empty').textContent           = t('empty');
+    document.getElementById('footer').textContent          = t('footer');
+    document.getElementById('total-badge').textContent     = `${scandales.length} ${t('cases')}`;
+    buildFilters();
+    render(currentFilter);
+  }
+
+  function buildFilters() {
+    const cats     = [...new Set(scandales.map(s => s.categorie))];
+    const filtersEl = document.getElementById('filters');
+    filtersEl.innerHTML = '';
+
+    const allBtn = document.createElement('button');
+    allBtn.className   = 'filter-btn' + (currentFilter === null ? ' active' : '');
+    allBtn.textContent = t('all');
+    allBtn.addEventListener('click', () => { currentFilter = null; buildFilters(); render(null); });
+    filtersEl.appendChild(allBtn);
+
+    cats.forEach(cat => {
+      const btn = document.createElement('button');
+      btn.className   = 'filter-btn' + (currentFilter === cat ? ' active' : '');
+      btn.textContent = t('cat')[cat] ?? cat;
+      btn.addEventListener('click', () => { currentFilter = cat; buildFilters(); render(cat); });
+      filtersEl.appendChild(btn);
+    });
+  }
+
+  function render(filter) {
+    const items = filter === null ? scandales : scandales.filter(s => s.categorie === filter);
+    const grid  = document.getElementById('grid');
+    const empty = document.getElementById('empty');
+
+    grid.innerHTML = '';
+    empty.style.display = items.length ? 'none' : 'block';
 
     items.forEach(s => {
-      const gravite = SEVERITE_LABEL[s.severite] ?? "moyenne";
-      const pays = Array.isArray(s.pays_concernes) ? s.pays_concernes : (s.pays ? [s.pays] : []);
-      const el = document.createElement("div");
-      el.className = "card";
+      const gravite = SEVERITE_LABEL[s.severite] ?? 'moyenne';
+      const sevLabel = t('sev')[gravite];
+      const pays    = Array.isArray(s.pays_concernes) ? s.pays_concernes : (s.pays ? [s.pays] : []);
+      const titre   = (lang === 'fr' ? s.titre_fr : null) ?? s.titre;
+      const corps   = (lang === 'fr' ? s.corps_fr : null) ?? s.corps ?? s.description ?? '';
+      const el = document.createElement('div');
+      el.className = 'card';
       el.innerHTML = `
         <div class="card-header">
-          <h2>${s.titre}</h2>
-          <span class="gravite gravite-${gravite}">${gravite.toUpperCase()}</span>
+          <h2>${titre}</h2>
+          <span class="gravite gravite-${gravite}">${sevLabel}</span>
         </div>
         <div class="card-meta">
           <span class="meta-pill">📅 ${s.date}</span>
-          <span class="meta-pill">🗂 ${s.categorie}</span>
-          ${pays.map(p => `<span class="meta-pill">🌍 ${p}</span>`).join("")}
+          <span class="meta-pill">🗂 ${t('cat')[s.categorie] ?? s.categorie}</span>
+          ${pays.map(p => `<span class="meta-pill">🌍 ${p}</span>`).join('')}
         </div>
-        <p>${s.corps ?? s.description ?? ""}</p>
-        <div class="card-tags">${(s.tags ?? []).map(t => `<span class="tag">#${t}</span>`).join("")}</div>
+        <p>${corps}</p>
+        <div class="card-tags">${(s.tags ?? []).map(t => `<span class="tag">#${t}</span>`).join('')}</div>
         <div class="card-sources">
-          <strong>Sources :</strong>
-          ${s.sources.map(src => `<a href="${src.url}" target="_blank" rel="noopener">${src.label ?? src.titre}</a>`).join("")}
+          <strong>${I18N[lang].sources}</strong>
+          ${s.sources.map(src => `<a href="${src.url}" target="_blank" rel="noopener">${src.label ?? src.titre}</a>`).join('')}
         </div>`;
       grid.appendChild(el);
     });
   }
 
+  document.getElementById('lang-btn').addEventListener('click', () => {
+    lang = lang === 'fr' ? 'en' : 'fr';
+    localStorage.setItem('lang', lang);
+    applyLang();
+  });
+
+  async function init() {
+    const data = await fetch('data/scandales.json').then(r => r.json());
+    scandales  = data.scandales;
+    applyLang();
+  }
+
   init().catch(e => {
-    document.getElementById("grid").innerHTML =
-      `<p style="color:var(--red);padding:2rem">Erreur : ${e.message}</p>`;
+    document.getElementById('grid').innerHTML =
+      `<p style="color:var(--red);padding:2rem">Error: ${e.message}</p>`;
   });
 </script>
 </body>

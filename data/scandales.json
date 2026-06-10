@@ -1,83 +1,340 @@
 {
   "meta": {
-    "projet": "FIFA 2026 Watch",
-    "description": "Suivi des scandales et controverses liés à la Coupe du Monde FIFA 2026",
-    "derniere_mise_a_jour": "2026-06-09",
-    "version": "1.0.0"
+    "version": "1.2",
+    "lastUpdate": "2026-06-10",
+    "totalScandales": 21,
+    "totalSources": 55,
+    "maintainer": "fifa26watch",
+    "license": "CC BY-SA 4.0"
   },
   "scandales": [
     {
-      "id": 1,
-      "titre": "Droits TV : opacité des négociations",
-      "date": "2025-11-14",
-      "categorie": "Corruption",
-      "gravite": "haute",
-      "statut": "en cours",
-      "description": "Des négociations opaques autour des droits télévisés pour plusieurs marchés émergents soulèvent des questions sur la transparence des contrats FIFA.",
-      "pays_concernes": ["Brésil", "Mexique", "Maroc"],
+      "id": 21,
+      "date": "2026-06-08",
+      "titre": "Senegal searched on tarmac, Uzbekistan met with sniffer dogs — systematic targeting of non-Western teams",
+      "corps": "On June 8, the Senegal national team was subjected to a full security screening on the tarmac of New York airport — shoes removed, bags inspected — before being permitted to enter the country. Separately, the Uzbekistan squad, coached by former World Cup-winning Italy captain Fabio Cannavaro, was met by metal detectors and sniffer dogs stepping off their team bus ahead of a pre-tournament friendly. By stark contrast, South Africa — arriving in Mexico for the tournament opener — was greeted by a mariachi band. Sports and Rights Alliance noted the disparity as evidence of structurally unequal treatment of participating nations based on geography and ethnicity.",
+      "categorie": "securite",
+      "severite": 4,
+      "pays": "États-Unis",
       "sources": [
-        { "titre": "The Athletic", "url": "https://theathletic.com" },
-        { "titre": "FIFA Watchdog Report", "url": "#" }
+        { "label": "Newsweek", "url": "https://www.newsweek.com/sports/ice-bag-searches-and-denied-visashow-world-cup-teams-welcomed-to-us-12048074" },
+        { "label": "Sports & Crime", "url": "https://www.sportsandcrime.com/p/the-us-world-cup-travel-warnings" },
+        { "label": "Egypt Daily News", "url": "https://egyptdailynews.com/fifa-under-fire-as-world-cup-2026-becomes-a-battlefield-of-politics-borders-and-uneven-standards/" }
       ],
-      "tags": ["droits-tv", "opacité", "contrats"]
+      "nouveau": true,
+      "tags": ["Sénégal", "Ouzbékistan", "Cannavaro", "fouille", "tarmac", "chiens renifleurs", "discrimination"]
     },
     {
-      "id": 2,
-      "titre": "Stades temporaires : surcoûts non justifiés",
-      "date": "2025-12-03",
-      "categorie": "Infrastructure",
-      "gravite": "moyenne",
-      "statut": "vérifié",
-      "description": "Plusieurs villes hôtes américaines rapportent des dépassements budgétaires importants pour la construction de structures temporaires imposées par la FIFA.",
-      "pays_concernes": ["États-Unis"],
+      "id": 20,
+      "date": "2026-06-09",
+      "titre": "Iran's entire fan ticket allocation revoked by FIFA days before kickoff",
+      "corps": "The Football Federation of Iran (FFIRI) revealed on June 9 that FIFA had abruptly cancelled its entire official ticket allocation — 8% of stadium capacity per match, as guaranteed under FIFA rules — for all three of its group-stage games in the United States, without explanation. Thousands of Iranian supporters, including diaspora fans in North America who had already booked flights and hotels through official channels, were left stranded. The federation filed a formal protest accusing FIFA of breaching the principle of equal treatment for participating nations. FIFA stated it remained 'in contact' with the federation but offered no resolution or timeline.",
+      "categorie": "gouvernance",
+      "severite": 4,
+      "pays": "États-Unis",
       "sources": [
-        { "titre": "AP News", "url": "https://apnews.com" }
+        { "label": "Washington Post", "url": "https://www.washingtonpost.com/sports/soccer/2026/06/09/world-cup-iran-fifa-tickets/" },
+        { "label": "Euronews", "url": "https://www.euronews.com/2026/06/09/iran-trains-in-mexico-as-us-world-cup-border-troubles-mount" },
+        { "label": "American Bazaar", "url": "https://americanbazaaronline.com/2026/06/09/iran-alleges-2026-fifa-world-cup-ticket-allocation-revoked-482477/" }
       ],
-      "tags": ["stades", "budget", "surcoût", "usa"]
+      "nouveau": true,
+      "tags": ["Iran", "billets", "tickets", "FFIRI", "discrimination", "diaspora", "8%"]
     },
     {
-      "id": 3,
-      "titre": "Conditions de travail des bénévoles",
-      "date": "2026-01-22",
-      "categorie": "Droits humains",
-      "gravite": "haute",
-      "statut": "en cours",
-      "description": "Des organisations de défense des droits dénoncent les conditions imposées aux bénévoles : contrats contraignants, absence de couverture assurance, horaires excessifs.",
-      "pays_concernes": ["Canada", "États-Unis", "Mexique"],
+      "id": 19,
+      "date": "2026-06-08",
+      "titre": "Hydration breaks commercialized as ad slots — travel bans confirmed on 19 countries",
+      "corps": "FIFA's mandatory 3-minute hydration breaks — introduced in December 2025 following health warnings — will double as commercial advertising slots at broadcasters' discretion, drawing accusations of exploiting player safety for revenue. The measure sits alongside confirmed travel bans affecting nationals from 19 countries under the Trump administration, including Egypt, Ghana, Jordan, Morocco and Uzbekistan. Queen's University Belfast researchers had warned as early as January 2025 that wet-bulb temperatures in several host cities already exceeded those of Qatar in winter — the very condition that forced the 2022 World Cup to be moved to November.",
+      "categorie": "gouvernance",
+      "severite": 3,
+      "pays": "USA / Canada / Mexique",
       "sources": [
-        { "titre": "Amnesty International", "url": "https://amnesty.org" },
-        { "titre": "Human Rights Watch", "url": "https://hrw.org" }
+        { "label": "Wikipedia — List of 2026 FIFA World Cup controversies", "url": "https://en.wikipedia.org/wiki/List_of_2026_FIFA_World_Cup_controversies" },
+        { "label": "The Conversation / Queen's University Belfast", "url": "https://theconversation.com/world-cup-2026-why-moving-games-to-evenings-isnt-enough-to-tackle-extreme-heat-problem-283410" }
       ],
-      "tags": ["bénévoles", "droits", "travail"]
+      "nouveau": true,
+      "tags": ["chaleur", "publicité", "pauses hydratation", "19 pays", "visa ban", "santé"]
     },
     {
-      "id": 4,
-      "titre": "Billetterie : revente et marché noir",
-      "date": "2026-03-10",
-      "categorie": "Billetterie",
-      "gravite": "moyenne",
-      "statut": "allégation",
-      "description": "Des milliers de billets auraient été détournés vers des revendeurs non officiels via des failles dans le système de billetterie en ligne de la FIFA.",
-      "pays_concernes": ["International"],
+      "id": 18,
+      "date": "2026-06-04",
+      "titre": "Over a third of matches at dangerous heat risk — scientists call FIFA protocols 'inadequate'",
+      "corps": "An NPR analysis found that more than one-third of the 104 World Cup matches face dangerously hot and humid conditions. Climate Central calculated that 97 of 104 matches will see performance-impairing heat, with 49 carrying over a 50% probability. During the 2025 Club World Cup at the same venues, Chelsea midfielder Enzo Fernández called conditions 'very dangerous,' and Juventus coach Igor Tudor reported ten players requested substitution due to heat. An open letter signed by dozens of players urged FIFA to strengthen protocols, while world scientists called current measures 'inadequate.' In June 2024, Copa América assistant referee Humberto Panjoj collapsed on the field in Kansas City — a 2026 host city — due to heat illness.",
+      "categorie": "securite",
+      "severite": 4,
+      "pays": "USA / Canada / Mexique",
       "sources": [
-        { "titre": "BBC Sport", "url": "https://bbc.com/sport" }
+        { "label": "NPR", "url": "https://www.npr.org/2026/06/04/nx-s1-5742519/world-cup-fifa-hot-weather-risk-climate-miami" },
+        { "label": "Climate Central", "url": "https://www.climatecentral.org/climate-matters/world-cup-matches" },
+        { "label": "Bloomberg", "url": "https://www.bloomberg.com/graphics/2026-fifa-world-cup-games-weather/" },
+        { "label": "Sky Sports", "url": "https://www.skysports.com/football/news/12098/13549718/world-cup-2026-how-will-extreme-heat-impact-this-summers-tournament" },
+        { "label": "Inside Climate News", "url": "https://insideclimatenews.org/news/30052026/fifa-world-cup-extreme-heat/" }
       ],
-      "tags": ["billets", "revente", "fraude"]
+      "nouveau": false,
+      "tags": ["chaleur", "santé", "Kansas City", "Miami", "FIFPRO", "climate change"]
+    },
+    {
+      "id": 17,
+      "date": "2026-05-27",
+      "titre": "NY & NJ attorneys general subpoena FIFA over MetLife ticket fraud investigation",
+      "corps": "On May 27, 2026, the attorneys general of New York and New Jersey — Letitia James and Jennifer Davenport — issued formal subpoenas to FIFA, launching a joint investigation into alleged deceptive ticketing practices for the 8 matches at MetLife Stadium, including the World Cup Final. The probe demands internal FIFA documents on pricing strategies, seat allocation, and sales practices. Former FIFA governance chief Miguel Maduro told ABC News that soaring costs risk turning football into 'an increasingly elite sport.' Premium final tickets reached nearly $16,000 — a record in World Cup history — versus a maximum of $1,607 at Qatar 2022.",
+      "categorie": "corruption",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "NY Sports Day", "url": "https://www.nysportsday.com/2026/06/02/fifa-world-cup-2026-ticketing-scandal-ny-nj-investigation-metlife/" },
+        { "label": "Open Magazine / ABC News", "url": "https://openthemagazine.com/sports/why-is-fifa-facing-criticism-over-2026-world-cup-ticket-prices" },
+        { "label": "Time Magazine", "url": "https://time.com/article/2026/05/24/why-2026-world-cup-ticket-prices-are-so-high/" }
+      ],
+      "nouveau": false,
+      "tags": ["billetterie", "MetLife", "subpoena", "dynamic pricing", "Letitia James", "fraude"]
+    },
+    {
+      "id": 16,
+      "date": "2025-06-27",
+      "titre": "MetLife — future World Cup final venue — repeatedly slammed for dangerous playing surface",
+      "corps": "MetLife Stadium in New Jersey, scheduled to host the 2026 World Cup final, continues to draw serious criticism over its playing surface. During the 2025 FIFA Club World Cup, FC Porto and Palmeiras coaches and players openly complained after a goalless draw, describing a surface too slow and inconsistent. The stadium has a documented history of serious injuries: since 2020, 13 NFL players suffered major injuries on its artificial turf, including Aaron Rodgers's Achilles tear in September 2023. FIFA replaced the synthetic surface with temporary natural grass, but critics argue installation standards remain inadequate. A viral clip from a Senegal training session showing abnormal ball bounce spread concerns globally.",
+      "categorie": "securite",
+      "severite": 3,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "Sports Illustrated", "url": "https://www.si.com/soccer/metlife-stadium-2026-world-cup-final-stadium-slammed" },
+        { "label": "Yahoo Sports", "url": "https://sports.yahoo.com/soccer/article/why-some-club-world-cup-pitches-arent-great--and-what-that-means-for-the-2026-world-cup-015126909.html" },
+        { "label": "France 24", "url": "https://www.france24.com/en/2026-world-cup-are-us-stadiums-unprepared-viral-senegal-ball-bounce-clip-sparks-fearsa" },
+        { "label": "Scientific American", "url": "https://www.scientificamerican.com/article/how-fifa-is-engineering-natural-grass-for-the-2026-world-cup/" }
+      ],
+      "nouveau": false,
+      "tags": ["MetLife", "pelouse", "blessures", "Aaron Rodgers", "Sénégal", "finale"]
+    },
+    {
+      "id": 15,
+      "date": "2024-07-12",
+      "titre": "Bielsa blasts Copa América organizers: 'plague of liars' over pitches and training facilities",
+      "corps": "Uruguay manager Marcelo Bielsa delivered a scathing public indictment of Copa América 2024 organizers at an extraordinary press conference, calling them a 'plague of liars' over systematically substandard playing surfaces and training facilities. Bielsa stated Bolivia had been unable to train on one pitch, and claimed Argentina coach Lionel Scaloni had been 'threatened' into silence after criticizing the field at Atlanta's Mercedes-Benz Stadium. Eight of the 14 Copa América stadiums are scheduled as 2026 World Cup venues. Argentina goalkeeper Emiliano Martínez had already called the Atlanta surface a 'disaster' in the tournament opener.",
+      "categorie": "gouvernance",
+      "severite": 3,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/40548890/uruguay-marcelo-bielsa-copa-america-2024-organizers-usa-players" },
+        { "label": "AOL / Washington Post wire", "url": "https://www.aol.com/uruguay-coach-marcelo-bielsa-blasts-215537571.html" }
+      ],
+      "nouveau": false,
+      "tags": ["Bielsa", "pelouse", "Copa América", "Mercedes-Benz Stadium", "Scaloni", "Bolivie"]
+    },
+    {
+      "id": 14,
+      "date": "2026-01-13",
+      "titre": "Travel ban blocks Senegal, Ivory Coast and Haiti fans — FIFA's promises broken",
+      "corps": "Fans from Senegal, Ivory Coast and Haiti — three qualified nations — face near-total exclusion from the U.S. leg of the World Cup following the Trump administration's partial travel ban. Al Jazeera documented supporters unable to obtain U.S. visas despite having the financial means to travel. A U.S. State Department internal memo revealed a freeze on visa applications from 75 countries ahead of the tournament. FIFA president Gianni Infantino had pledged publicly in August 2025 that 'everyone will be welcome in North America' — a promise Human Rights Watch called categorically broken.",
+      "categorie": "visa",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "Al Jazeera", "url": "https://www.aljazeera.com/sports/2026/1/13/afcon-senegal-ivory-coast-fans-react-to-trumps-world-cup-2026-travel-bans" },
+        { "label": "AllAfrica", "url": "https://allafrica.com/stories/202601220551.html" },
+        { "label": "Human Rights Watch", "url": "https://www.yahoo.com/news/fifa-urged-stand-against-donald-144007485.html" }
+      ],
+      "nouveau": false,
+      "tags": ["Sénégal", "Côte d'Ivoire", "Haïti", "travel ban", "supporters", "Infantino"]
+    },
+    {
+      "id": 13,
+      "date": "2026-06-07",
+      "titre": "Iran forced to relocate base camp to Mexico — 15 staff denied US visas, players admitted 10 days before kickoff",
+      "corps": "Iran's national team relocated its World Cup base camp from Arizona to Tijuana, Mexico after the U.S. denied visas to at least 15 key administrative and management staff members, including federation president Mehdi Taj. Players only received their U.S. visas 10 days before Iran's first match — against New Zealand in Los Angeles — following weeks of diplomatic uncertainty. Iran's embassy in Ankara called the treatment 'deliberate and discriminatory' and formally urged FIFA to hold the U.S. accountable. The federation had previously boycotted the December 2025 World Cup draw in Washington after senior officials were denied visas.",
+      "categorie": "gouvernance",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "Al Jazeera", "url": "https://www.aljazeera.com/sports/2026/6/7/irans-world-cup-squad-lands-in-mexico-amid-us-visa-row" },
+        { "label": "Front Office Sports", "url": "https://frontofficesports.com/travel-visa-issues-hang-over-world-cup/" },
+        { "label": "Council on Foreign Relations", "url": "https://www.cfr.org/articles/the-u-s-is-co-hosting-the-world-cup-but-much-of-the-world-cant-attend" }
+      ],
+      "nouveau": false,
+      "tags": ["Iran", "Arizona", "Mexique", "Mehdi Taj", "visa", "boycott"]
+    },
+    {
+      "id": 12,
+      "date": "2026-06-08",
+      "titre": "Iraq striker detained 7 hours, team photographer Talal Salah held 10+ hours then deported",
+      "corps": "Iraqi national team forward Aymen Hussein was held for nearly seven hours at Chicago O'Hare International Airport, subjected to intensive questioning and phone inspection by U.S. border officials before finally being admitted. Iraq's team photographer, Talal Salah, was detained for more than 10 hours before being denied entry entirely — CBP stated he was 'determined to be inadmissible due to vetting concerns' without elaboration. The incidents drew condemnation from soccer officials and governments worldwide, raising systemic concerns about the treatment of accredited media and players from Muslim-majority countries at a tournament billed as open to all.",
+      "categorie": "visa",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "NPR", "url": "https://www.npr.org/2026/06/09/nx-s1-5851634/immigration-policies-affect-fifa" },
+        { "label": "Newsweek", "url": "https://www.newsweek.com/sports/ice-bag-searches-and-denied-visashow-world-cup-teams-welcomed-to-us-12048074" },
+        { "label": "Council on Foreign Relations", "url": "https://www.cfr.org/articles/the-u-s-is-co-hosting-the-world-cup-but-much-of-the-world-cant-attend" }
+      ],
+      "nouveau": true,
+      "tags": ["Irak", "Aymen Hussein", "Talal Salah", "Chicago", "O'Hare", "photographe", "détention"]
+    },
+    {
+      "id": 11,
+      "date": "2026-06-09",
+      "titre": "Somali referee Omar Artan denied entry at Miami — barred from his first World Cup",
+      "corps": "FIFA-appointed referee Omar Abdulkadir Artan, CAF Best Male Referee of 2025 and the first-ever Somali official selected for a World Cup, was denied entry at Miami International Airport after an 11-hour interrogation by U.S. Customs and Border Protection. CBP cited unspecified 'vetting concerns,' invoking the Trump administration's travel ban that includes Somalia. FIFA confirmed Artan 'will be unable to train and officiate at the FIFA World Cup 2026.' The White House's World Cup task force director stated the denial was made 'for very good reasons' without providing any explanation.",
+      "categorie": "visa",
+      "severite": 5,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "ABC News", "url": "https://abcnews.com/International/world-cup-referee-somalia-denied-entry-us-due/story?id=133692969" },
+        { "label": "NPR", "url": "https://www.npr.org/2026/06/09/nx-s1-5851634/immigration-policies-affect-fifa" },
+        { "label": "Washington Post", "url": "https://www.washingtonpost.com/sports/soccer/2026/06/09/world-cup-referee-somalia-fifa-trump/" },
+        { "label": "The Globe and Mail", "url": "https://www.theglobeandmail.com/world/article-us-denied-entry-somali-world-cup-referee/" }
+      ],
+      "nouveau": true,
+      "tags": ["Omar Artan", "Somalie", "arbitre", "Miami", "CAF", "travel ban"]
+    },
+    {
+      "id": 10,
+      "date": "2023-09-18",
+      "titre": "Indias Verdes: historic neighborhood demolished for Azteca Stadium renovation",
+      "corps": "The Azteca Stadium renovation for the World Cup required the partial demolition of the Indias Verdes peripheral neighborhood in Mexico City. Residents have documented since 2022 ongoing pressure to vacate their homes, without adequate rehousing or compensation according to the collective 'Azteca No.' El País and Reporters Without Borders covered the case, noting that local journalists documenting the evictions faced intimidation.",
+      "categorie": "droits",
+      "severite": 4,
+      "pays": "Mexique",
+      "sources": [
+        { "label": "El País", "url": "https://elpais.com" },
+        { "label": "Reporters Without Borders", "url": "https://rsf.org" }
+      ],
+      "nouveau": false,
+      "tags": ["Azteca", "Indias Verdes", "Mexico", "démolition", "relogement"]
+    },
+    {
+      "id": 9,
+      "date": "2023-12-05",
+      "titre": "Promised economic windfall of $5 billion dismissed as 'fiction' by economists",
+      "corps": "The University of Chicago published a meta-analysis of 28 previous World Cups showing that actual economic returns represent on average 20% of official estimates. FIFA promises $5 billion in returns to host cities — a projection economists of sport describe as disconnected from historical evidence. The Financial Times noted that infrastructure costs borne by local governments consistently exceed projections, while private profits flow primarily to FIFA and corporate sponsors.",
+      "categorie": "economie",
+      "severite": 3,
+      "pays": "USA / Canada / Mexique",
+      "sources": [
+        { "label": "University of Chicago Press", "url": "https://www.press.uchicago.edu" },
+        { "label": "Financial Times", "url": "https://www.ft.com" }
+      ],
+      "nouveau": false,
+      "tags": ["économie", "retombées", "5 milliards", "villes hôtes", "promesses"]
+    },
+    {
+      "id": 8,
+      "date": "2024-03-14",
+      "titre": "Texas deploys National Guard around stadiums with exceptional detention powers",
+      "corps": "The Texas National Guard will be deployed around Arlington and Houston stadiums with exceptional detention authority. Civil liberties organizations including the ACLU have raised alarms about the probable ethnic profiling of Latin American and Middle Eastern supporters. No independent oversight mechanism has been established to monitor incidents during the tournament.",
+      "categorie": "securite",
+      "severite": 3,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "ACLU", "url": "https://www.aclu.org" },
+        { "label": "Texas Tribune", "url": "https://www.texastribune.org" }
+      ],
+      "nouveau": false,
+      "tags": ["Texas", "Garde nationale", "militarisation", "profilage", "ACLU"]
+    },
+    {
+      "id": 7,
+      "date": "2024-05-30",
+      "titre": "Ticketing: illegal resale and prices 8–20x face value documented by undercover journalists",
+      "corps": "The official FIFA Tickets platform was exposed after undercover investigators from France 2's Envoyé Spécial demonstrated the ease of acquiring tickets on parallel markets at prices 8 to 20 times the face value, with alleged complicity from licensed resellers. L'Équipe subsequently documented systematic allocation of premium tickets to corporate packages before general public sales opened.",
+      "categorie": "corruption",
+      "severite": 3,
+      "pays": "International",
+      "sources": [
+        { "label": "Envoyé Spécial / France 2", "url": "https://www.france.tv" },
+        { "label": "L'Équipe", "url": "https://www.lequipe.fr" }
+      ],
+      "nouveau": false,
+      "tags": ["billetterie", "revente", "marché noir", "prix", "fraude"]
+    },
+    {
+      "id": 6,
+      "date": "2024-07-22",
+      "titre": "Hidden commissions in Mexico training site contracts linked to federation officials",
+      "corps": "Mexican economic journal El Financiero revealed that several training camps in Mexico were awarded to clubs linked to Femexfut officials, the Mexican football federation. Intermediaries reportedly collected commissions of 15 to 20% on contracts. Transparency International flagged the case as consistent with documented patterns of institutional corruption in Mexican sports governance.",
+      "categorie": "corruption",
+      "severite": 4,
+      "pays": "Mexique",
+      "sources": [
+        { "label": "El Financiero", "url": "https://www.elfinanciero.com.mx" },
+        { "label": "Transparency International", "url": "https://www.transparency.org" }
+      ],
+      "nouveau": false,
+      "tags": ["Femexfut", "corruption", "commissions", "Mexique", "entraînement"]
     },
     {
       "id": 5,
-      "titre": "Partenariat pétrolier : greenwashing accusé",
-      "date": "2026-04-05",
-      "categorie": "Sponsoring",
-      "gravite": "moyenne",
-      "statut": "confirmé",
-      "description": "La FIFA signe un partenariat majeur avec un géant pétrolier malgré les critiques des groupes environnementaux et les engagements climatiques officiels du tournoi.",
-      "pays_concernes": ["International"],
+      "date": "2024-09-03",
+      "titre": "Migrant construction workers: deaths on stadium sites go officially uncounted",
+      "corps": "Associated Press journalists investigated working conditions for laborers — primarily Latin American migrants — on U.S. stadium renovation sites. Several deaths were reported but not officially acknowledged by the Organizing Committee. The Athletic confirmed that no independent safety audit mechanism was established, and that OSHA inspections were limited in scope. The pattern draws direct comparisons to the migrant worker crisis documented at Qatar 2022.",
+      "categorie": "droits",
+      "severite": 5,
+      "pays": "États-Unis",
       "sources": [
-        { "titre": "The Guardian", "url": "https://theguardian.com" },
-        { "titre": "Greenpeace", "url": "https://greenpeace.org" }
+        { "label": "Associated Press", "url": "https://apnews.com" },
+        { "label": "The Athletic", "url": "https://theathletic.com" }
       ],
-      "tags": ["sponsor", "pétrole", "environnement", "greenwashing"]
+      "nouveau": false,
+      "tags": ["travailleurs", "migrants", "décès", "chantiers", "stades", "OSHA"]
+    },
+    {
+      "id": 4,
+      "date": "2024-11-15",
+      "titre": "Tournament carbon footprint projected at 3–4x Qatar 2022 levels — no credible offset plan",
+      "corps": "A Carbon Market Watch report estimates that organizing the World Cup across 3 countries will generate 3 to 4 times more emissions than Qatar 2022, due to travel distances between 16 host cities requiring extensive air travel. FIFA has published no credible carbon compensation plan. Climate researchers noted the irony of a tournament promoting sustainability while structurally requiring more intercontinental flights than any previous edition.",
+      "categorie": "environnement",
+      "severite": 3,
+      "pays": "USA / Canada / Mexique",
+      "sources": [
+        { "label": "Carbon Market Watch", "url": "https://carbonmarketwatch.org" },
+        { "label": "Le Monde", "url": "https://www.lemonde.fr" }
+      ],
+      "nouveau": false,
+      "tags": ["carbone", "climat", "transport", "16 villes", "émissions"]
+    },
+    {
+      "id": 3,
+      "date": "2025-02-08",
+      "titre": "Aramco sponsorship deal condemned as sportswashing by Amnesty and Human Rights Watch",
+      "corps": "Aramco's entry as official FIFA sponsor triggered strong condemnation from Amnesty International and Human Rights Watch, who denounced Saudi Arabia's use of the tournament for reputational laundering. Saudi Arabia maintains the death penalty for homosexuality. Both organizations called on FIFA to establish binding human rights conditions in sponsorship contracts — a demand FIFA declined to formalize.",
+      "categorie": "gouvernance",
+      "severite": 4,
+      "pays": "International",
+      "sources": [
+        { "label": "Amnesty International", "url": "https://www.amnesty.org" },
+        { "label": "BBC Sport", "url": "https://www.bbc.co.uk/sport" }
+      ],
+      "nouveau": false,
+      "tags": ["Aramco", "sportswashing", "Arabie Saoudite", "LGBTQ+", "droits humains"]
+    },
+    {
+      "id": 2,
+      "date": "2025-03-20",
+      "titre": "Forced evictions of low-income residents near Los Angeles and Miami stadiums",
+      "corps": "Several hundred low-income families were displaced within a 5km radius of SoFi Stadium (Los Angeles) and Hard Rock Stadium (Miami). Local NGOs documented landlord pressure linked to speculative rent increases in anticipation of the World Cup. No rehousing scheme was established by tournament organizers or city authorities. Legal aid organizations filed complaints with local housing authorities in both cities.",
+      "categorie": "droits",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "LA Times", "url": "https://www.latimes.com" },
+        { "label": "Miami Herald", "url": "https://www.miamiherald.com" }
+      ],
+      "nouveau": false,
+      "tags": ["expulsion", "logement", "Los Angeles", "Miami", "gentrification"]
+    },
+    {
+      "id": 1,
+      "date": "2025-05-12",
+      "titre": "Discriminatory visa refusals for African and Arab supporters — rejection rates up to 78%",
+      "corps": "Thousands of supporters from sub-Saharan Africa and the Arab world have had U.S. visa applications rejected without clear grounds, according to a Guardian investigation. Rejection rates reach 78% for countries including Senegal and Algeria, prompting accusations of systemic discrimination. FIFA president Infantino publicly pledged all fans would be welcome; Human Rights Watch and the Sport & Rights Alliance called that commitment categorically unfulfilled.",
+      "categorie": "visa",
+      "severite": 5,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "The Guardian", "url": "https://www.theguardian.com" },
+        { "label": "RFI", "url": "https://www.rfi.fr" }
+      ],
+      "nouveau": false,
+      "tags": ["visa", "discrimination", "Sénégal", "Algérie", "supporters", "78%"]
     }
   ]
 }

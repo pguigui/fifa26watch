@@ -233,11 +233,39 @@
       flex-direction: column;
       gap: .8rem;
       transition: border-color .15s, transform .12s, box-shadow .12s;
+      overflow: hidden;
     }
     .card:hover {
       border-color: var(--accent);
       transform: translateY(-2px);
       box-shadow: 0 4px 20px rgba(0,0,0,.3);
+    }
+
+    /* Card image */
+    .card-img-wrap {
+      margin: -1.25rem -1.4rem 0;
+      height: 190px;
+      overflow: hidden;
+      position: relative;
+      background: var(--surface2);
+    }
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .3s;
+    }
+    .card:hover .card-img-wrap img { transform: scale(1.03); }
+    .card-img-credit {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: .6rem;
+      color: rgba(255,255,255,.65);
+      background: rgba(0,0,0,.5);
+      padding: .1rem .4rem;
+      border-top-left-radius: 4px;
     }
 
     /* Card top row: meta + badge */
@@ -607,7 +635,16 @@
       const card = document.createElement('article');
       card.className = 'card';
       card.setAttribute('role', 'listitem');
-      card.innerHTML = `
+
+      const imgHtml = s.image ? `
+        <div class="card-img-wrap">
+          <img src="${s.image.url}" alt="${s.image.alt}"
+               loading="lazy" referrerpolicy="no-referrer"
+               onerror="this.parentElement.remove()">
+          ${s.image.credit ? `<span class="card-img-credit">${s.image.credit}</span>` : ''}
+        </div>` : '';
+
+      card.innerHTML = imgHtml + `
         <div class="card-top">
           <div class="card-meta-row">
             <span class="card-date">📅 ${formatDate(s.date)}</span>

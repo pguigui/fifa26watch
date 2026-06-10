@@ -4,187 +4,428 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FIFA 2026 Watch — Scandals & Controversies</title>
+
+  <meta name="description" content="Citizen journalism — tracking FIFA 2026 World Cup scandals in real time." />
+  <meta property="og:title" content="FIFA 2026 Watch" />
+  <meta property="og:description" content="Tracking scandals & controversies at the 2026 FIFA World Cup." />
+  <meta property="og:url" content="https://pguigui.github.io/fifa26watch" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="FIFA 2026 Watch" />
+  <meta name="twitter:description" content="Citizen journalism tracking FIFA 2026 scandals in real time." />
+
   <style>
     :root {
-      --bg:      #0d1117;
-      --surface: #161b22;
-      --border:  #30363d;
-      --accent:  #c9a227;
-      --red:     #da3633;
-      --orange:  #e3693b;
-      --green:   #3fb950;
-      --blue:    #58a6ff;
-      --text:    #e6edf3;
-      --muted:   #8b949e;
-      --radius:  8px;
+      --bg:       #111827;
+      --surface:  #1e2a3a;
+      --surface2: #26364a;
+      --border:   #2e3f56;
+      --accent:   #d4a017;
+      --accent2:  rgba(212,160,23,.1);
+      --red:      #ef4444;
+      --orange:   #f97316;
+      --green:    #22c55e;
+      --blue:     #60a5fa;
+      --text:     #f1f5f9;
+      --muted:    #94a3b8;
+      --radius:   8px;
+      --sidebar-w: 210px;
+      --header-h:  58px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
+      line-height: 1.6;
     }
 
-    /* ── Header ── */
+    /* ── Focus ring ── */
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    /* ─────────────────── Header ─────────────────── */
     header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
       background: var(--surface);
       border-bottom: 2px solid var(--accent);
-      padding: 1.25rem 2rem;
+      height: var(--header-h);
       display: flex;
       align-items: center;
       gap: 1rem;
+      padding: 0 1.25rem;
     }
-    .logo { font-size: 2rem; }
-    header h1 { font-size: 1.4rem; font-weight: 700; color: var(--accent); }
-    header p  { font-size: .85rem; color: var(--muted); margin-top: 3px; }
 
-    #lang-btn {
+    .brand { display: flex; align-items: center; gap: .65rem; flex-shrink: 0; }
+    .logo  { font-size: 1.6rem; line-height: 1; }
+    header h1 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: -.02em;
+    }
+    #header-subtitle {
+      font-size: .72rem;
+      color: var(--muted);
+      margin-top: 1px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 340px;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
       margin-left: auto;
+    }
+
+    /* Search */
+    .search-wrap { position: relative; }
+    .search-wrap::before {
+      content: "🔍";
+      position: absolute;
+      left: .6rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: .7rem;
+      pointer-events: none;
+      opacity: .6;
+    }
+    #search {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: .32rem .75rem .32rem 2rem;
+      border-radius: 999px;
+      font-size: .8rem;
+      width: 170px;
+      transition: border-color .15s, width .2s;
+      outline: none;
+    }
+    #search:focus { border-color: var(--accent); width: 210px; }
+    #search::placeholder { color: var(--muted); }
+
+    /* Sort */
+    #sort {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: .32rem .55rem;
+      border-radius: 4px;
+      font-size: .78rem;
+      cursor: pointer;
+      outline: none;
+    }
+    #sort:focus { border-color: var(--accent); }
+
+    /* Lang toggle */
+    #lang-btn {
       background: transparent;
       border: 1px solid var(--accent);
       color: var(--accent);
-      font-size: .75rem;
-      font-weight: 700;
-      padding: .3rem .7rem;
+      font-size: .7rem;
+      font-weight: 800;
+      padding: .28rem .6rem;
       border-radius: 4px;
       cursor: pointer;
-      letter-spacing: .05em;
-      transition: all .15s;
-      flex-shrink: 0;
+      letter-spacing: .07em;
+      transition: background .15s;
     }
-    #lang-btn:hover {
-      background: rgba(201,162,39,.12);
-    }
+    #lang-btn:hover { background: var(--accent2); }
 
     #total-badge {
       background: var(--red);
       color: #fff;
-      font-size: .75rem;
+      font-size: .7rem;
       font-weight: 700;
-      padding: .3rem .75rem;
+      padding: .22rem .6rem;
       border-radius: 999px;
-      flex-shrink: 0;
+      white-space: nowrap;
     }
 
-    /* ── Filters ── */
-    .filters {
-      padding: 1rem 2rem;
-      display: flex;
-      gap: .5rem;
-      flex-wrap: wrap;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-    }
-    .filter-btn {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      padding: .35rem .9rem;
-      border-radius: 999px;
-      font-size: .8rem;
-      cursor: pointer;
-      transition: all .15s;
-    }
-    .filter-btn:hover, .filter-btn.active {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: rgba(201,162,39,.08);
-    }
-
-    /* ── Grid ── */
-    main {
-      padding: 1.75rem 2rem;
+    /* ─────────────────── Layout ─────────────────── */
+    .layout {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      grid-template-columns: var(--sidebar-w) 1fr;
+      min-height: calc(100vh - var(--header-h) - 48px);
+      align-items: start;
+    }
+
+    /* ─────────────────── Sidebar ─────────────────── */
+    #sidebar {
+      position: sticky;
+      top: var(--header-h);
+      height: calc(100vh - var(--header-h));
+      overflow-y: auto;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 1rem 0;
+    }
+
+    .sidebar-heading {
+      font-size: .62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--muted);
+      padding: 0 1rem .75rem;
+    }
+
+    #cat-list { list-style: none; }
+
+    .cat-item {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .55rem 1rem;
+      cursor: pointer;
+      border-left: 3px solid transparent;
+      transition: background .12s, border-color .12s, color .12s;
+      font-size: .84rem;
+      color: var(--muted);
+      user-select: none;
+    }
+    .cat-item:hover { background: var(--surface2); color: var(--text); }
+    .cat-item.active {
+      border-left-color: var(--accent);
+      background: var(--accent2);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .cat-item:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+    .cat-icon  { font-size: .95rem; width: 1.2rem; text-align: center; flex-shrink: 0; }
+    .cat-label { flex: 1; }
+    .cat-count {
+      font-size: .68rem;
+      background: var(--surface2);
+      color: var(--muted);
+      padding: .1rem .45rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .cat-item.active .cat-count {
+      background: var(--accent2);
+      color: var(--accent);
+    }
+
+    /* ─────────────────── Content ─────────────────── */
+    .content { padding: 1.5rem 1.75rem; }
+
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
       gap: 1.25rem;
     }
 
-    /* ── Card ── */
+    /* ─────────────────── Card ─────────────────── */
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.25rem;
+      padding: 1.25rem 1.4rem;
       display: flex;
       flex-direction: column;
       gap: .8rem;
-      transition: border-color .15s, transform .15s;
+      transition: border-color .15s, transform .12s, box-shadow .12s;
     }
-    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
-
-    .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: .5rem; }
-    .card-header h2 { font-size: 1rem; font-weight: 600; line-height: 1.45; }
-
-    /* Severity pills */
-    .gravite {
-      font-size: .68rem; font-weight: 700;
-      padding: .2rem .55rem; border-radius: 999px;
-      white-space: nowrap; flex-shrink: 0;
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0,0,0,.3);
     }
-    .gravite-haute   { background: rgba(218,54,51,.15);  color: var(--red);    border: 1px solid rgba(218,54,51,.4); }
-    .gravite-moyenne { background: rgba(227,105,59,.15); color: var(--orange); border: 1px solid rgba(227,105,59,.4); }
-    .gravite-basse   { background: rgba(63,185,80,.15);  color: var(--green);  border: 1px solid rgba(63,185,80,.4); }
 
-    /* Meta row */
-    .card-meta { display: flex; gap: .4rem; flex-wrap: wrap; font-size: .73rem; color: var(--muted); }
-    .meta-pill { background: rgba(255,255,255,.05); border-radius: 4px; padding: .15rem .45rem; }
+    /* Card top row: meta + badge */
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: .5rem;
+    }
+    .card-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .25rem .5rem;
+      font-size: .72rem;
+      color: var(--muted);
+    }
+    .card-date   { }
+    .card-dot    { opacity: .4; }
+    .card-cat    { color: var(--blue); font-weight: 600; }
+    .card-pays   { }
 
-    .card p { font-size: .875rem; color: var(--muted); line-height: 1.65; }
+    /* Severity */
+    .sev-badge {
+      font-size: .62rem;
+      font-weight: 800;
+      padding: .2rem .6rem;
+      border-radius: 4px;
+      letter-spacing: .05em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .sev-haute   { background: rgba(239,68,68,.15);  color: #fca5a5; border: 1px solid rgba(239,68,68,.3); }
+    .sev-moyenne { background: rgba(249,115,22,.15); color: #fdba74; border: 1px solid rgba(249,115,22,.3); }
+    .sev-basse   { background: rgba(34,197,94,.15);  color: #86efac; border: 1px solid rgba(34,197,94,.3); }
 
-    .card-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+    /* Title */
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--text);
+    }
+
+    /* Body */
+    .card-body { font-size: .875rem; color: var(--muted); }
+    .card-body p { line-height: 1.75; }
+    .card-body p + p { margin-top: .65rem; }
+
+    /* Tags */
+    .card-tags { display: flex; flex-wrap: wrap; gap: .3rem; }
     .tag {
-      font-size: .7rem; color: var(--accent);
-      background: rgba(201,162,39,.1);
-      border: 1px solid rgba(201,162,39,.2);
-      border-radius: 4px; padding: .1rem .4rem;
+      font-size: .67rem;
+      color: var(--accent);
+      background: var(--accent2);
+      border: 1px solid rgba(212,160,23,.2);
+      border-radius: 4px;
+      padding: .1rem .4rem;
     }
 
+    /* Sources */
     .card-sources {
       font-size: .75rem;
       border-top: 1px solid var(--border);
-      padding-top: .6rem; color: var(--muted);
+      padding-top: .6rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .2rem .55rem;
+      align-items: baseline;
+      color: var(--muted);
     }
-    .card-sources a { color: var(--blue); text-decoration: none; margin-right: .5rem; }
+    .card-sources strong { flex-shrink: 0; }
+    .card-sources a { color: var(--blue); text-decoration: none; }
     .card-sources a:hover { text-decoration: underline; }
 
-    /* ── Empty state ── */
+    /* Empty state */
     #empty {
       display: none;
-      grid-column: 1/-1;
+      padding: 4rem;
       text-align: center;
-      padding: 3rem;
       color: var(--muted);
+      font-size: .9rem;
     }
 
-    /* ── Footer ── */
+    /* ─────────────────── Footer ─────────────────── */
     footer {
       text-align: center;
-      padding: 1.5rem 2rem;
-      font-size: .78rem;
+      padding: 1rem 2rem;
+      font-size: .73rem;
       color: var(--muted);
       border-top: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    /* ─────────────────── Mobile ─────────────────── */
+    @media (max-width: 768px) {
+      header {
+        height: auto;
+        flex-wrap: wrap;
+        padding: .75rem 1rem;
+        gap: .5rem;
+      }
+      .brand { flex: 1 0 100%; }
+      #header-subtitle { max-width: 100%; }
+      .header-controls {
+        flex: 1 0 100%;
+        margin-left: 0;
+        flex-wrap: wrap;
+        gap: .4rem;
+      }
+      .search-wrap { flex: 1; min-width: 0; }
+      #search, #search:focus { width: 100%; }
+
+      .layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+      }
+
+      #sidebar {
+        position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: .5rem 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+      .sidebar-heading { display: none; }
+      #cat-list {
+        display: flex;
+        flex-direction: row;
+        padding: .25rem 1rem;
+        gap: .35rem;
+        width: max-content;
+      }
+      .cat-item {
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        border-radius: 999px;
+        padding: .3rem .8rem;
+        white-space: nowrap;
+        font-size: .78rem;
+        gap: .25rem;
+      }
+      .cat-item.active {
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        border-radius: 999px;
+      }
+      .cat-icon { display: none; }
+      .cat-count { display: none; }
+
+      .content { padding: 1rem; }
+      #grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <span class="logo">⚽</span>
-  <div>
-    <h1>FIFA 2026 Watch</h1>
-    <p id="header-subtitle"></p>
+  <div class="brand">
+    <span class="logo" aria-hidden="true">⚽</span>
+    <div>
+      <h1>FIFA 2026 Watch</h1>
+      <p id="header-subtitle"></p>
+    </div>
   </div>
-  <button id="lang-btn"></button>
-  <span id="total-badge">—</span>
+  <div class="header-controls">
+    <div class="search-wrap">
+      <input type="search" id="search" autocomplete="off" aria-label="Search" />
+    </div>
+    <select id="sort" aria-label="Sort"></select>
+    <button id="lang-btn" aria-label="Switch language"></button>
+    <span id="total-badge" aria-live="polite"></span>
+  </div>
 </header>
 
-<div class="filters" id="filters"></div>
+<div class="layout">
+  <aside id="sidebar" aria-label="Filter by category">
+    <div class="sidebar-heading" id="sidebar-heading" aria-hidden="true"></div>
+    <ul id="cat-list" role="listbox" aria-label="Categories"></ul>
+  </aside>
 
-<main id="grid"></main>
-<p id="empty"></p>
+  <div class="content">
+    <div id="grid" role="list"></div>
+    <p id="empty" role="status"></p>
+  </div>
+</div>
 
 <footer id="footer"></footer>
 
@@ -192,117 +433,198 @@
   const I18N = {
     fr: {
       subtitle:  "Journalisme citoyen — Scandales & controverses de la Coupe du Monde 2026",
+      searchPh:  "Rechercher…",
+      sortDate:  "Plus récents",
+      sortSev:   "Plus graves",
+      topics:    "Sujets",
       all:       "Tous",
       cases:     "cas",
       sources:   "Sources :",
-      empty:     "Aucun résultat pour ce filtre.",
+      empty:     "Aucun résultat.",
       footer:    "Source : data/scandales.json — Projet open source, à but informatif uniquement.",
       langBtn:   "EN",
       sev:       { haute: "HAUTE", moyenne: "MOYENNE", basse: "BASSE" },
       cat: {
-        securite:      "Sécurité",
-        gouvernance:   "Gouvernance",
-        visa:          "Visa",
-        corruption:    "Corruption",
-        droits:        "Droits",
-        economie:      "Économie",
+        securite: "Sécurité", gouvernance: "Gouvernance", visa: "Visa",
+        corruption: "Corruption", droits: "Droits", economie: "Économie",
         environnement: "Environnement"
+      },
+      catIcon: {
+        securite: "🛡️", gouvernance: "⚖️", visa: "🛂",
+        corruption: "💰", droits: "✊", economie: "📊", environnement: "🌍"
       }
     },
     en: {
       subtitle:  "Citizen journalism — Scandals & controversies at the 2026 FIFA World Cup",
+      searchPh:  "Search…",
+      sortDate:  "Most recent",
+      sortSev:   "Most severe",
+      topics:    "Topics",
       all:       "All",
       cases:     "cases",
       sources:   "Sources:",
-      empty:     "No results for this filter.",
+      empty:     "No results.",
       footer:    "Source: data/scandales.json — Open source project, for informational purposes only.",
       langBtn:   "FR",
       sev:       { haute: "HIGH", moyenne: "MEDIUM", basse: "LOW" },
       cat: {
-        securite:      "Security",
-        gouvernance:   "Governance",
-        visa:          "Visa",
-        corruption:    "Corruption",
-        droits:        "Rights",
-        economie:      "Economics",
+        securite: "Security", gouvernance: "Governance", visa: "Visa",
+        corruption: "Corruption", droits: "Rights", economie: "Economics",
         environnement: "Environment"
+      },
+      catIcon: {
+        securite: "🛡️", gouvernance: "⚖️", visa: "🛂",
+        corruption: "💰", droits: "✊", economie: "📊", environnement: "🌍"
       }
     }
   };
 
-  const SEVERITE_LABEL = { 5: "haute", 4: "haute", 3: "moyenne", 2: "basse", 1: "basse" };
+  const SEV_LABEL = { 5: "haute", 4: "haute", 3: "moyenne", 2: "basse", 1: "basse" };
 
-  let lang = localStorage.getItem('lang') ||
-             (navigator.language.startsWith('fr') ? 'fr' : 'en');
-  let scandales    = [];
-  let currentFilter = null;
+  let lang        = localStorage.getItem('lang') || (navigator.language.startsWith('fr') ? 'fr' : 'en');
+  let scandales   = [];
+  let currentCat  = null;
+  let currentSort = 'date';
+  let searchQuery = '';
 
-  function t(key) { return I18N[lang][key]; }
+  function tr(key) { return I18N[lang][key]; }
+
+  function formatDate(dateStr) {
+    const d = new Date(dateStr + 'T12:00:00');
+    return d.toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-US',
+      { year: 'numeric', month: 'long', day: 'numeric' });
+  }
+
+  function formatBody(text) {
+    if (!text) return '';
+    const raw = text.trim();
+    // Split at period + space + uppercase (works for EN and FR)
+    const parts = raw.split(/\.\s+(?=[A-ZÁÀÂÄÉÈÊËÎÏÔÙÛÜÇ])/u);
+    if (parts.length <= 2) return `<p>${raw}</p>`;
+    // Re-add period to all parts except the last (which may already end with one)
+    const withDot = parts.map((p, i) => i < parts.length - 1 ? p + '.' : p);
+    const paras = [];
+    for (let i = 0; i < withDot.length; i += 2) {
+      const chunk = withDot.slice(i, i + 2).join(' ').trim();
+      if (chunk) paras.push(`<p>${chunk}</p>`);
+    }
+    return paras.join('');
+  }
 
   function applyLang() {
     document.documentElement.lang = lang;
-    document.getElementById('lang-btn').textContent        = t('langBtn');
-    document.getElementById('header-subtitle').textContent = t('subtitle');
-    document.getElementById('empty').textContent           = t('empty');
-    document.getElementById('footer').textContent          = t('footer');
-    document.getElementById('total-badge').textContent     = `${scandales.length} ${t('cases')}`;
-    buildFilters();
-    render(currentFilter);
+    document.getElementById('header-subtitle').textContent = tr('subtitle');
+    document.getElementById('search').placeholder          = tr('searchPh');
+    document.getElementById('empty').textContent           = tr('empty');
+    document.getElementById('footer').textContent          = tr('footer');
+    document.getElementById('lang-btn').textContent        = tr('langBtn');
+    document.getElementById('lang-btn').setAttribute('aria-label',
+      lang === 'fr' ? 'Switch to English' : 'Passer en français');
+    document.getElementById('sidebar-heading').textContent = tr('topics');
+
+    const sortEl = document.getElementById('sort');
+    const prev   = sortEl.value;
+    sortEl.innerHTML = `
+      <option value="date">${tr('sortDate')}</option>
+      <option value="severity">${tr('sortSev')}</option>`;
+    sortEl.value = prev || currentSort;
+
+    buildSidebar();
+    render();
   }
 
-  function buildFilters() {
-    const cats     = [...new Set(scandales.map(s => s.categorie))];
-    const filtersEl = document.getElementById('filters');
-    filtersEl.innerHTML = '';
+  function buildSidebar() {
+    const cats   = [...new Set(scandales.map(s => s.categorie))];
+    const counts = {};
+    scandales.forEach(s => { counts[s.categorie] = (counts[s.categorie] || 0) + 1; });
 
-    const allBtn = document.createElement('button');
-    allBtn.className   = 'filter-btn' + (currentFilter === null ? ' active' : '');
-    allBtn.textContent = t('all');
-    allBtn.addEventListener('click', () => { currentFilter = null; buildFilters(); render(null); });
-    filtersEl.appendChild(allBtn);
-
+    const list = document.getElementById('cat-list');
+    list.innerHTML = '';
+    list.appendChild(makeItem(null, '🌐', tr('all'), scandales.length));
     cats.forEach(cat => {
-      const btn = document.createElement('button');
-      btn.className   = 'filter-btn' + (currentFilter === cat ? ' active' : '');
-      btn.textContent = t('cat')[cat] ?? cat;
-      btn.addEventListener('click', () => { currentFilter = cat; buildFilters(); render(cat); });
-      filtersEl.appendChild(btn);
+      const icon  = I18N[lang].catIcon[cat] ?? '📌';
+      const label = I18N[lang].cat[cat] ?? cat;
+      list.appendChild(makeItem(cat, icon, label, counts[cat] ?? 0));
     });
   }
 
-  function render(filter) {
-    const items = filter === null ? scandales : scandales.filter(s => s.categorie === filter);
+  function makeItem(cat, icon, label, count) {
+    const li = document.createElement('li');
+    li.className = 'cat-item' + (currentCat === cat ? ' active' : '');
+    li.setAttribute('role', 'option');
+    li.setAttribute('aria-selected', String(currentCat === cat));
+    li.setAttribute('tabindex', '0');
+    li.innerHTML = `
+      <span class="cat-icon" aria-hidden="true">${icon}</span>
+      <span class="cat-label">${label}</span>
+      <span class="cat-count">${count}</span>`;
+    const activate = () => { currentCat = cat; buildSidebar(); render(); };
+    li.addEventListener('click', activate);
+    li.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); } });
+    return li;
+  }
+
+  function render() {
+    let items = [...scandales];
+
+    if (currentCat) items = items.filter(s => s.categorie === currentCat);
+
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      items = items.filter(s => {
+        const titre = (lang === 'fr' ? s.titre_fr : null) ?? s.titre ?? '';
+        const corps = (lang === 'fr' ? s.corps_fr : null) ?? s.corps ?? '';
+        return titre.toLowerCase().includes(q)
+          || corps.toLowerCase().includes(q)
+          || (s.tags ?? []).some(tag => tag.toLowerCase().includes(q))
+          || (s.pays ?? '').toLowerCase().includes(q);
+      });
+    }
+
+    items.sort(currentSort === 'date'
+      ? (a, b) => b.date.localeCompare(a.date)
+      : (a, b) => b.severite - a.severite);
+
+    document.getElementById('total-badge').textContent = `${items.length} ${tr('cases')}`;
+
     const grid  = document.getElementById('grid');
     const empty = document.getElementById('empty');
-
     grid.innerHTML = '';
     empty.style.display = items.length ? 'none' : 'block';
 
+    const catLabels = I18N[lang].cat;
+    const catIcons  = I18N[lang].catIcon;
+
     items.forEach(s => {
-      const gravite = SEVERITE_LABEL[s.severite] ?? 'moyenne';
-      const sevLabel = t('sev')[gravite];
-      const pays    = Array.isArray(s.pays_concernes) ? s.pays_concernes : (s.pays ? [s.pays] : []);
-      const titre   = (lang === 'fr' ? s.titre_fr : null) ?? s.titre;
-      const corps   = (lang === 'fr' ? s.corps_fr : null) ?? s.corps ?? s.description ?? '';
-      const el = document.createElement('div');
-      el.className = 'card';
-      el.innerHTML = `
-        <div class="card-header">
-          <h2>${titre}</h2>
-          <span class="gravite gravite-${gravite}">${sevLabel}</span>
+      const sevKey   = SEV_LABEL[s.severite] ?? 'moyenne';
+      const sevLabel = tr('sev')[sevKey];
+      const titre    = (lang === 'fr' ? s.titre_fr : null) ?? s.titre ?? '';
+      const corps    = (lang === 'fr' ? s.corps_fr : null) ?? s.corps ?? '';
+      const pays     = Array.isArray(s.pays_concernes) ? s.pays_concernes : (s.pays ? [s.pays] : []);
+      const catLabel = catLabels[s.categorie] ?? s.categorie;
+      const catIcon  = catIcons[s.categorie] ?? '';
+
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.setAttribute('role', 'listitem');
+      card.innerHTML = `
+        <div class="card-top">
+          <div class="card-meta-row">
+            <span class="card-date">📅 ${formatDate(s.date)}</span>
+            <span class="card-dot">·</span>
+            <span class="card-cat">${catIcon} ${catLabel}</span>
+            ${pays.map(p => `<span class="card-dot">·</span><span class="card-pays">🌍 ${p}</span>`).join('')}
+          </div>
+          <span class="sev-badge sev-${sevKey}" title="Severity ${s.severite}/5">${sevLabel}</span>
         </div>
-        <div class="card-meta">
-          <span class="meta-pill">📅 ${s.date}</span>
-          <span class="meta-pill">🗂 ${t('cat')[s.categorie] ?? s.categorie}</span>
-          ${pays.map(p => `<span class="meta-pill">🌍 ${p}</span>`).join('')}
-        </div>
-        <p>${corps}</p>
-        <div class="card-tags">${(s.tags ?? []).map(t => `<span class="tag">#${t}</span>`).join('')}</div>
+        <h2 class="card-title">${titre}</h2>
+        <div class="card-body">${formatBody(corps)}</div>
+        <div class="card-tags">${(s.tags ?? []).map(tag => `<span class="tag">#${tag}</span>`).join('')}</div>
         <div class="card-sources">
-          <strong>${I18N[lang].sources}</strong>
-          ${s.sources.map(src => `<a href="${src.url}" target="_blank" rel="noopener">${src.label ?? src.titre}</a>`).join('')}
+          <strong>${tr('sources')}</strong>
+          ${s.sources.map(src => `<a href="${src.url}" target="_blank" rel="noopener noreferrer">${src.label ?? src.titre}</a>`).join('')}
         </div>`;
-      grid.appendChild(el);
+      grid.appendChild(card);
     });
   }
 
@@ -310,6 +632,16 @@
     lang = lang === 'fr' ? 'en' : 'fr';
     localStorage.setItem('lang', lang);
     applyLang();
+  });
+
+  document.getElementById('search').addEventListener('input', e => {
+    searchQuery = e.target.value.trim();
+    render();
+  });
+
+  document.getElementById('sort').addEventListener('change', e => {
+    currentSort = e.target.value;
+    render();
   });
 
   async function init() {

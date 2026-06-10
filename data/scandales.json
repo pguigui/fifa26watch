@@ -208,9 +208,9 @@
       "id": 11,
       "date": "2026-06-09",
       "image": {
-        "url": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/06/08/0d784064-7a3c-4c70-b81a-8a1a34ec5a15/thumbnail/620x413/0ecf651cf64cfe1c10f27748959a6821/ap26146768183916.jpg",
-        "alt": "Referee Omar Abdulkadir Artan during a CAF Champions League match in Morocco, May 2026",
-        "credit": "AP Photo / CBS News"
+        "url": "https://aje.news/wp-content/uploads/2026/06/2026-06-10T065700Z_379590941_RC2MQLAHKG4I_RTRMADP_3_SOCCER-WORLDCUP-IMMIGRATION-SOMALIA-1781076928.jpg",
+        "alt": "Omar Artan arrives at Mogadishu airport to a hero's welcome after being denied entry to the US World Cup",
+        "credit": "Reuters / Al Jazeera"
       },
       "titre": "Somali referee Omar Artan denied entry at Miami — barred from his first World Cup",
       "titre_fr": "L'arbitre somalien Omar Artan refusé à Miami — écarté de sa première Coupe du Monde",
@@ -273,8 +273,8 @@
       "severite": 3,
       "pays": "États-Unis",
       "sources": [
-        { "label": "ACLU", "url": "https://www.aclu.org" },
-        { "label": "Texas Tribune", "url": "https://www.texastribune.org" }
+        { "label": "ACLU — travel advisory", "url": "https://www.aclu.org/press-releases/over-120-civil-society-groups-issue-travel-advisory-for-u-s-ahead-of-fifa-world-cup" },
+        { "label": "ACLU — know your rights", "url": "https://www.aclu.org/campaigns-initiatives/the-2026-fifa-mens-world-cup-know-your-rights-know-your-risks" }
       ],
       "nouveau": false,
       "tags": ["Texas", "Garde nationale", "militarisation", "profilage", "ACLU"]
@@ -324,8 +324,8 @@
       "severite": 5,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Associated Press", "url": "https://apnews.com" },
-        { "label": "The Athletic", "url": "https://theathletic.com" }
+        { "label": "NPR — SoFi workers strike", "url": "https://www.npr.org/2026/06/06/nx-s1-5848682/sofi-stadium-strike-world-cup" },
+        { "label": "Prism Reports — gentrification", "url": "https://prismreports.org/2026/06/09/world-cup-gentrification-displacement/" }
       ],
       "nouveau": false,
       "tags": ["travailleurs", "migrants", "décès", "chantiers", "stades", "OSHA"]
@@ -341,8 +341,8 @@
       "severite": 3,
       "pays": "USA / Canada / Mexique",
       "sources": [
-        { "label": "Carbon Market Watch", "url": "https://carbonmarketwatch.org" },
-        { "label": "Le Monde", "url": "https://www.lemonde.fr" }
+        { "label": "Carbon Market Watch", "url": "https://carbonmarketwatch.org/2024/12/20/fifas-foul-irresponsible-farcical-and-absurd-approach-to-the-climate/" },
+        { "label": "Carbon Market Watch (2026)", "url": "https://carbonmarketwatch.org/2026/06/10/fifa-fo-fum-magical-thinking-will-not-solve-world-cups-giant-climate-problem/" }
       ],
       "nouveau": false,
       "tags": ["carbone", "climat", "transport", "16 villes", "émissions"]
@@ -358,8 +358,8 @@
       "severite": 4,
       "pays": "International",
       "sources": [
-        { "label": "Amnesty International", "url": "https://www.amnesty.org" },
-        { "label": "BBC Sport", "url": "https://www.bbc.co.uk/sport" }
+        { "label": "Amnesty International", "url": "https://www.amnesty.org/en/latest/news/2024/04/global-fifa-sponsorship-deal-with-saudi-aramco-covering-world-cups-raises-human-rights-concerns/" },
+        { "label": "CBC Radio", "url": "https://www.cbc.ca/radio/whatonearth/fifa-world-cup-aramco-9.7224085" }
       ],
       "nouveau": false,
       "tags": ["Aramco", "sportswashing", "Arabie Saoudite", "LGBTQ+", "droits humains"]
@@ -397,8 +397,8 @@
       "severite": 5,
       "pays": "États-Unis",
       "sources": [
-        { "label": "The Guardian", "url": "https://www.theguardian.com" },
-        { "label": "RFI", "url": "https://www.rfi.fr" }
+        { "label": "The Canary — Moroccan fans blocked", "url": "https://www.thecanary.co/global/world-analysis/2026/06/08/world-cup-visas/" },
+        { "label": "allAfrica — fans anger at travel bans", "url": "https://allafrica.com/stories/202606090702.html" }
       ],
       "nouveau": false,
       "tags": ["visa", "discrimination", "Sénégal", "Algérie", "supporters", "78%"]

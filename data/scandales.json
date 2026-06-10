@@ -34,6 +34,11 @@
     {
       "id": 20,
       "date": "2026-06-09",
+      "image": {
+        "url": "https://aje.io/wp-content/uploads/2026/06/2026-06-07T150030Z_2015345098_UP1EM6715OTQ8_RTRMADP_3_SOCCER-WORLDCUP-IRN-ARRIVAL-1780993950.jpg",
+        "alt": "Iran captain Ehsan Hajsafi speaks to media after the squad arrives in Tijuana, Mexico",
+        "credit": "AFP / Reuters / Al Jazeera"
+      },
       "titre": "Iran's entire fan ticket allocation revoked by FIFA days before kickoff",
       "titre_fr": "L'intégralité des billets alloués à l'Iran révoquée par la FIFA quelques jours avant le coup d'envoi",
       "corps": "The Football Federation of Iran (FFIRI) revealed on June 9 that FIFA had abruptly cancelled its entire official ticket allocation — 8% of stadium capacity per match, as guaranteed under FIFA rules — for all three of its group-stage games in the United States, without explanation. Thousands of Iranian supporters, including diaspora fans in North America who had already booked flights and hotels through official channels, were left stranded. The federation filed a formal protest accusing FIFA of breaching the principle of equal treatment for participating nations. FIFA stated it remained 'in contact' with the federation but offered no resolution or timeline.",
@@ -69,6 +74,11 @@
     {
       "id": 18,
       "date": "2026-06-04",
+      "image": {
+        "url": "https://e0.365dm.com/26/06/736x414/skysports-world-cup-heat_7262834.png",
+        "alt": "Players at the 2026 World Cup facing dangerous heat and humidity conditions",
+        "credit": "Sky Sports"
+      },
       "titre": "Over a third of matches at dangerous heat risk — scientists call FIFA protocols 'inadequate'",
       "titre_fr": "Plus d'un tiers des matchs exposés à une chaleur dangereuse — les scientifiques jugent les protocoles de la FIFA 'inadéquats'",
       "corps": "An NPR analysis found that more than one-third of the 104 World Cup matches face dangerously hot and humid conditions. Climate Central calculated that 97 of 104 matches will see performance-impairing heat, with 49 carrying over a 50% probability. During the 2025 Club World Cup at the same venues, Chelsea midfielder Enzo Fernández called conditions 'very dangerous,' and Juventus coach Igor Tudor reported ten players requested substitution due to heat. An open letter signed by dozens of players urged FIFA to strengthen protocols, while world scientists called current measures 'inadequate.' In June 2024, Copa América assistant referee Humberto Panjoj collapsed on the field in Kansas City — a 2026 host city — due to heat illness.",
@@ -131,6 +141,11 @@
     {
       "id": 15,
       "date": "2024-07-12",
+      "image": {
+        "url": "https://i2-prod.themirror.com/article589040.ece/ALTERNATES/s1200f/0_GettyImages-2161799063.jpg",
+        "alt": "Uruguay coach Marcelo Bielsa delivers a scathing press conference condemning Copa América organizers",
+        "credit": "Getty Images / The Mirror"
+      },
       "titre": "Bielsa blasts Copa América organizers: 'plague of liars' over pitches and training facilities",
       "titre_fr": "Bielsa fustige les organisateurs de la Copa América : 'une plaie de menteurs' sur les pelouses et installations",
       "corps": "Uruguay manager Marcelo Bielsa delivered a scathing public indictment of Copa América 2024 organizers at an extraordinary press conference, calling them a 'plague of liars' over systematically substandard playing surfaces and training facilities. Bielsa stated Bolivia had been unable to train on one pitch, and claimed Argentina coach Lionel Scaloni had been 'threatened' into silence after criticizing the field at Atlanta's Mercedes-Benz Stadium. Eight of the 14 Copa América stadiums are scheduled as 2026 World Cup venues. Argentina goalkeeper Emiliano Martínez had already called the Atlanta surface a 'disaster' in the tournament opener.",
@@ -157,7 +172,7 @@
       "pays": "États-Unis",
       "sources": [
         { "label": "Al Jazeera", "url": "https://www.aljazeera.com/sports/2026/1/13/afcon-senegal-ivory-coast-fans-react-to-trumps-world-cup-2026-travel-bans" },
-        { "label": "AllAfrica", "url": "https://allafrica.com/stories/202601220551.html" },
+        { "label": "The Guardian — travel ban Senegal & Côte d'Ivoire", "url": "https://www.theguardian.com/football/2025/dec/16/world-cup-travel-ban-senegal-cote-divoire" },
         { "label": "Human Rights Watch", "url": "https://www.yahoo.com/news/fifa-urged-stand-against-donald-144007485.html" }
       ],
       "nouveau": false,
@@ -189,6 +204,11 @@
     {
       "id": 12,
       "date": "2026-06-08",
+      "image": {
+        "url": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/724506",
+        "alt": "Iraqi striker Aymen Hussein before the World Cup playoff match against Bolivia in Monterrey, March 2026",
+        "credit": "Jerusalem Post"
+      },
       "titre": "Iraq striker detained 7 hours, team photographer Talal Salah held 10+ hours then deported",
       "titre_fr": "L'attaquant irakien retenu 7 heures, le photographe Talal Salah détenu plus de 10 heures puis expulsé",
       "corps": "Iraqi national team forward Aymen Hussein was held for nearly seven hours at Chicago O'Hare International Airport, subjected to intensive questioning and phone inspection by U.S. border officials before finally being admitted. Iraq's team photographer, Talal Salah, was detained for more than 10 hours before being denied entry entirely — CBP stated he was 'determined to be inadmissible due to vetting concerns' without elaboration. The incidents drew condemnation from soccer officials and governments worldwide, raising systemic concerns about the treatment of accredited media and players from Muslim-majority countries at a tournament billed as open to all.",
@@ -397,8 +417,8 @@
       "severite": 5,
       "pays": "États-Unis",
       "sources": [
-        { "label": "The Canary — Moroccan fans blocked", "url": "https://www.thecanary.co/global/world-analysis/2026/06/08/world-cup-visas/" },
-        { "label": "allAfrica — fans anger at travel bans", "url": "https://allafrica.com/stories/202606090702.html" }
+        { "label": "The Guardian — $15,000 bond for African fans", "url": "https://www.theguardian.com/football/2026/mar/25/fans-and-players-from-five-african-world-cup-countries-face-15000-bond-to-enter-us" },
+        { "label": "Washington Post — immigration front line", "url": "https://www.washingtonpost.com/immigration/2026/06/08/how-world-cup-became-front-line-immigration-debate-us/" }
       ],
       "nouveau": false,
       "tags": ["visa", "discrimination", "Sénégal", "Algérie", "supporters", "78%"]

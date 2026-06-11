@@ -1,13 +1,156 @@
 {
   "meta": {
-    "version": "1.3",
-    "lastUpdate": "2026-06-10",
-    "totalScandales": 21,
-    "totalSources": 55,
+    "version": "1.4",
+    "lastUpdate": "2026-06-11",
+    "totalScandales": 29,
+    "totalSources": 78,
     "maintainer": "fifa26watch",
     "license": "CC BY-SA 4.0"
   },
   "scandales": [
+    {
+      "id": 29,
+      "date": "2026-06-11",
+      "titre": "Mexico City opening ceremony fan fest blocked by teachers' union and missing-persons protests",
+      "titre_fr": "La fête des fans de Mexico bloquée par la grève des enseignants et les manifestations de proches de disparus",
+      "corps": "On the day of the 2026 World Cup opening ceremony, Mexico City's main fan festival at the Zócalo was thrown into uncertainty after the CNTE teachers' union erected a protest camp blocking access to the main square, demanding pension reform from President Claudia Sheinbaum. Collectives representing families of missing persons — victims of Mexico's drug war — also staged a march near the Azteca Stadium. A total of 19 social movements announced protests during opening week. President Sheinbaum acknowledged the Zócalo might be unusable for the fan fest, noting 18 alternative venues were available. PBS and Al Jazeera reported the disruptions highlighted how the World Cup's festive narrative collides with Mexico's unresolved social crises.",
+      "corps_fr": "Le jour de la cérémonie d'ouverture de la Coupe du Monde 2026, la fête des fans de Mexico au Zócalo a été compromise par un camp de protestation de la CNTE, le syndicat des enseignants, réclamant une réforme des retraites à la présidente Claudia Sheinbaum. Des collectifs de familles de disparus — victimes du narcotrafic — ont également marché près du stade Azteca. Au total, 19 mouvements sociaux ont annoncé des manifestations pendant la semaine d'inauguration. La présidente a reconnu que le Zócalo pourrait ne pas être disponible, citant 18 sites alternatifs. PBS et Al Jazeera ont rapporté que ces perturbations illustrent le choc entre la narration festive du Mondial et les crises sociales non résolues du Mexique.",
+      "categorie": "droits",
+      "severite": 3,
+      "pays": "Mexique",
+      "sources": [
+        { "label": "PBS NewsHour", "url": "https://www.pbs.org/newshour/world/world-cup-celebrations-clash-with-social-tensions-in-mexico" },
+        { "label": "Al Jazeera", "url": "https://www.aljazeera.com/sports/2026/6/11/mexico-braced-for-celebrations-protests-as-world-cup-opens-amid-tensions" },
+        { "label": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/49020475/mexico-city-world-cup-fan-fest-protests-president-claudia-sheibaum" },
+        { "label": "NPR", "url": "https://www.npr.org/2026/06/06/nx-s1-5847853/demonstrations-cause-disruptions-across-mexico-city-ahead-of-fifa-world-cup-opening" }
+      ],
+      "nouveau": true,
+      "tags": ["Mexique", "Mexico City", "Zócalo", "CNTE", "enseignants", "disparus", "protestation", "ouverture"]
+    },
+    {
+      "id": 28,
+      "date": "2026-06-09",
+      "titre": "LGBTQ+ fan groups boycott US venues — Egypt and Iran demand FIFA cancel Seattle Pride World Cup event",
+      "titre_fr": "Les groupes de supporters LGBTQ+ boycottent les stades américains — l'Égypte et l'Iran demandent à la FIFA d'annuler l'événement Pride de Seattle",
+      "corps": "England's official LGBTQ+ supporters' group Three Lions Pride announced it will have no visible presence at the 2026 tournament, citing the 'dangerous rollback of human rights' in the United States, including a March 2026 State Department rule requiring visa applicants to declare their sex assigned at birth — creating direct barriers for transgender fans. Simultaneously, Egypt and Iran filed formal complaints with FIFA demanding cancellation of a Pride celebration planned by the Seattle host committee for their June 26 group-stage match at Lumen Field. Iranian federation president Mehdi Taj called the event an 'irrational move,' while the Egyptian Football Association wrote to FIFA Secretary General Mattias Grafström rejecting 'in absolute terms' any LGBTQ connection to the match. The Seattle organizing committee reaffirmed its commitment, stating: 'This is who we are, and we welcome everybody.'",
+      "corps_fr": "Le groupe officiel de supporters LGBTQ+ d'Angleterre, Three Lions Pride, a annoncé qu'il n'aurait aucune présence visible au tournoi 2026, citant le 'recul dangereux des droits humains' aux États-Unis, notamment une règle du Département d'État de mars 2026 exigeant que les demandeurs de visa déclarent leur sexe assigné à la naissance. Simultanément, l'Égypte et l'Iran ont déposé des plaintes formelles auprès de la FIFA pour l'annulation d'une célébration Pride prévue par le comité de Seattle pour leur match du 26 juin à Lumen Field. Le président de la fédération iranienne Mehdi Taj a qualifié l'événement de 'démarche irrationnelle', tandis que la fédération égyptienne a écrit au secrétaire général Mattias Grafström pour rejeter 'en termes absolus' tout lien LGBTQ+ avec le match. Le comité de Seattle a réaffirmé son engagement.",
+      "categorie": "droits",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "Sky Sports", "url": "https://www.skysports.com/football/news/11095/13550716/world-cup-2026-why-lgbtq-fan-groups-are-not-attending-matches-in-the-united-states" },
+        { "label": "FavsNews — Egypt & Iran vs Seattle Pride", "url": "https://favs.news/fifa-seattle-pride-world-cup-egypt-iran-objections/" }
+      ],
+      "nouveau": true,
+      "tags": ["LGBTQ+", "Three Lions Pride", "Seattle", "Égypte", "Iran", "boycott", "transgenre", "droits humains"]
+    },
+    {
+      "id": 27,
+      "date": "2026-06-08",
+      "titre": "Ivory Coast fan body confirms virtually all supporters barred from US leg of World Cup",
+      "titre_fr": "La fédération des supporters ivoiriens confirme que quasiment tous ses membres sont exclus de la phase américaine",
+      "corps": "Julien Kouadio Adonis, president of Ivory Coast's National Committee of Elephants Supporters, confirmed that virtually all supporters were denied US visas ahead of the tournament. Despite Ivory Coast qualifying for the World Cup and fans purchasing official tickets through legitimate channels, their applications were rejected en masse — a direct consequence of the Trump administration's travel restrictions affecting nationals from 39 countries, including Côte d'Ivoire. The $15,000 visa bond requirement briefly imposed before being partially waived in May 2026 had already driven most fans to abandon their plans. Human rights groups described the situation as a de facto exclusion of an entire nation's fanbase from a tournament ostensibly open to the world.",
+      "corps_fr": "Julien Kouadio Adonis, président du Comité national des supporters des Éléphants de Côte d'Ivoire, a confirmé que quasiment tous les supporters ivoiriens se sont vu refuser leur visa américain. Malgré la qualification du pays et l'achat de billets officiels par des fans ayant réservé leurs voyages par des canaux légitimes, leurs demandes ont été rejetées en masse — conséquence directe des restrictions de voyage de l'administration Trump visant les ressortissants de 39 pays, dont la Côte d'Ivoire. La caution de 15 000 dollars brièvement imposée, puis partiellement levée en mai 2026, avait déjà contraint la majorité à renoncer. Des organisations de défense des droits ont décrit la situation comme une exclusion de facto de toute la base de supporters d'un pays.",
+      "categorie": "visa",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "SuperSport", "url": "https://supersport.com/football/news/c9573608-6e4e-4293-a434-ef585bb0ecf4/ivory-coast-supporters-banned-from-world-cup-says-fan-body" },
+        { "label": "The Sun Nigeria", "url": "https://thesun.ng/2026-world-cup-ivory-coast-fans-denied-us-visas/" },
+        { "label": "Vanguard News", "url": "https://www.vanguardngr.com/2026/06/us-bans-ivory-coat-supporters-from-world-cup/" }
+      ],
+      "nouveau": true,
+      "tags": ["Côte d'Ivoire", "supporters", "visa", "Éléphants", "Adonis", "travel ban", "exclusion"]
+    },
+    {
+      "id": 26,
+      "date": "2026-06-06",
+      "titre": "SoFi Stadium workers authorize strike over ICE presence — deal secured with anti-ICE clause",
+      "titre_fr": "Les travailleurs du SoFi Stadium autorisent une grève contre la présence de l'ICE — accord conclu avec une clause anti-ICE",
+      "corps": "Nearly 2,000 food and beverage workers at SoFi Stadium — hosting several World Cup matches — voted to authorize a strike days before the tournament, demanding wage increases, protections against automation, and crucially, a formal ban on ICE agents at the worksite. The union's lead demand was contractual protection from deportation amid the Trump administration's immigration enforcement posture. Negotiators reached a last-minute deal with venue operator Legends Hospitality granting wage increases and establishing an explicit right to strike should ICE or Border Patrol activity threaten worker safety on site — a first-of-its-kind clause in a US stadium labor contract.",
+      "corps_fr": "Près de 2 000 travailleurs de la restauration du SoFi Stadium — qui accueille plusieurs matchs de la Coupe du Monde — ont voté l'autorisation d'une grève quelques jours avant le tournoi, exigeant des augmentations de salaire, des protections contre l'automatisation et surtout l'interdiction contractuelle de la présence de l'ICE sur le site. La demande prioritaire du syndicat était une protection contre les expulsions dans le contexte de la politique migratoire de l'administration Trump. Un accord de dernière minute a été conclu avec l'opérateur Legends Hospitality, prévoyant des hausses salariales et un droit explicite à la grève si l'ICE ou la police des frontières venait menacer la sécurité des travailleurs — une première dans un contrat de travail de stade américain.",
+      "categorie": "droits",
+      "severite": 3,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "NPR", "url": "https://www.npr.org/2026/06/06/nx-s1-5848682/sofi-stadium-strike-world-cup" },
+        { "label": "NBC Los Angeles", "url": "https://www.nbclosangeles.com/world-cup/sofi-stadium-workers-strike-world-cup/3901439/" },
+        { "label": "ESPN", "url": "https://www.espn.com/espn/story/_/id/49011203/sofi-stadium-workers-union-reaches-deal-avoid-strike-world-cup" }
+      ],
+      "nouveau": true,
+      "tags": ["SoFi Stadium", "grève", "ICE", "travailleurs", "Los Angeles", "salaires", "immigration", "Legends Hospitality"]
+    },
+    {
+      "id": 25,
+      "date": "2026-06-06",
+      "titre": "Dozens of accredited journalists from Africa and Iran denied US visas — AIPS demands FIFA intervene",
+      "titre_fr": "Des dizaines de journalistes accrédités d'Afrique et d'Iran se voient refuser leur visa américain — l'AIPS exige l'intervention de la FIFA",
+      "corps": "The International Sports Press Association (AIPS) sent an urgent letter to FIFA after dozens of accredited journalists — primarily from Iran and several African countries — were denied US visas or granted only single-entry permits, barring them from covering matches across all three host countries. AIPS called the situation 'unacceptable' given that affected reporters had completed FIFA's official accreditation process. Journalists on single-entry visas face being locked out of the US leg if they follow their national team to Mexico or Canada. FIFA responded that 'visa issuance remains the responsibility of host governments,' drawing criticism for deflecting accountability while collecting billions in broadcast and sponsorship revenue from the tournament.",
+      "corps_fr": "L'Association internationale de la presse sportive (AIPS) a adressé une lettre urgente à la FIFA après que des dizaines de journalistes accrédités — principalement d'Iran et de plusieurs pays africains — se sont vu refuser leur visa américain ou n'ont obtenu qu'un visa à entrée unique, les empêchant de couvrir les matchs dans les trois pays hôtes. L'AIPS a qualifié la situation d''inacceptable' au regard du processus d'accréditation officiel de la FIFA déjà accompli par les journalistes concernés. Certains, titulaires d'un visa à entrée unique, risquent d'être bloqués hors des États-Unis s'ils suivent leur équipe au Mexique ou au Canada. La FIFA a répondu que 'la délivrance des visas relève de la responsabilité des gouvernements hôtes', s'attirant des critiques pour ce désengagement.",
+      "categorie": "gouvernance",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "AllAfrica — AIPS letter", "url": "https://allafrica.com/stories/202606090611.html" },
+        { "label": "Africa Newsroom — communiqué AIPS", "url": "https://www.africa-newsroom.com/press/world-cup-accredited-journalists-raise-concerns-over-unfair-united-states-us-visa-restrictions-aips-calls-on-fifa-to-intervene?lang=en" },
+        { "label": "APA News", "url": "https://apanews.net/politicised-visa-regime-overshadowing-2026-fifa-world-cup/" }
+      ],
+      "nouveau": true,
+      "tags": ["journalistes", "AIPS", "visa", "liberté de la presse", "Afrique", "Iran", "accréditation"]
+    },
+    {
+      "id": 24,
+      "date": "2026-05-26",
+      "titre": "FIFA bans Iran's pre-revolutionary 'Lion and Sun' flag — US nonprofit threatens First Amendment lawsuit",
+      "titre_fr": "La FIFA interdit le drapeau prérévolutionnaire iranien 'Lion et Soleil' — une ONG américaine menace de poursuites au nom du Premier amendement",
+      "corps": "FIFA announced it will bar Iran's historic pre-revolutionary Lion and Sun flag — carried by diaspora supporters as a symbol of opposition to the Islamic Republic — from all World Cup stadiums, citing its Stadium Code of Conduct which prohibits 'political' symbols. The Institute for Voices of Liberty threatened to file suit in California courts, arguing the ban violates First Amendment free speech protections on US soil. Critics noted a perceived double standard: Palestinian and Ukrainian flags, both politically charged, remain explicitly permitted, while a symbol carried primarily by Iranians exiled from the regime is classified as political. Iran is scheduled to open group play on June 15 at SoFi Stadium, where tens of thousands of Iranian-Americans are expected.",
+      "corps_fr": "La FIFA a annoncé l'interdiction du drapeau prérévolutionnaire iranien 'Lion et Soleil' — brandi par les supporters de la diaspora comme symbole d'opposition à la République islamique — dans tous les stades du Mondial, invoquant son code de conduite interdisant les symboles 'politiques'. L'Institut pour les voix de la liberté a menacé de déposer une plainte devant les tribunaux californiens, arguant que cette interdiction viole le Premier amendement sur la liberté d'expression applicable sur le sol américain. Des observateurs ont relevé une application à géométrie variable : les drapeaux palestinien et ukrainien — pourtant à forte charge politique — restent explicitement autorisés.",
+      "categorie": "gouvernance",
+      "severite": 3,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "OutKick / Fox News", "url": "https://www.foxnews.com/outkick-sports/fifa-faces-lawsuit-plan-ban-irans-pre-revolution-lion-sun-flag-2026-world-cup-stadiums" },
+        { "label": "Radio Free Europe / Radio Liberty", "url": "https://www.rferl.org/a/iran-fifa-lion-sun-flag-ban-world-cup/33761122.html" },
+        { "label": "Iran International", "url": "https://www.iranintl.com/en/202605255784" }
+      ],
+      "nouveau": false,
+      "tags": ["Iran", "drapeau", "Lion et Soleil", "censure", "diaspora", "Premier amendement", "procès"]
+    },
+    {
+      "id": 23,
+      "date": "2026-05-12",
+      "titre": "ICE agents confirmed inside World Cup stadiums — DHS refuses to rule out deportation arrests at matches",
+      "titre_fr": "Des agents de l'ICE confirmés dans les stades de la Coupe du Monde — le DHS refuse d'exclure des arrestations lors des matchs",
+      "corps": "DHS Secretary Markwayne Mullin confirmed on May 12 that U.S. Immigration and Customs Enforcement agents will be present inside World Cup stadiums, stating ICE 'always' conducts immigration enforcement and declining to rule out arrests at matches. Human Rights Watch had already documented a precursor incident: an asylum seeker attending the Club World Cup final in July 2025 with his children was arrested by ICE after the game. Since Trump's inauguration, ICE has arrested at least 92,392 people in and around World Cup host cities. Civil rights groups warned the confirmed ICE presence would deter millions of fans — including lawful undocumented residents — from attending games, effectively privatizing enforcement at a public sporting event.",
+      "corps_fr": "Le secrétaire au DHS Markwayne Mullin a confirmé le 12 mai que des agents de l'ICE seraient présents à l'intérieur des stades de la Coupe du Monde, déclarant que l'ICE fait 'toujours' respecter les lois sur l'immigration et refusant d'exclure des arrestations lors des matchs. Human Rights Watch avait documenté un précédent : un demandeur d'asile emmenant ses enfants à la finale de la Coupe du Monde des clubs en juillet 2025 avait été arrêté par l'ICE. Depuis l'investiture de Trump, l'ICE a procédé à au moins 92 392 arrestations dans les villes hôtes du Mondial. Des associations de défense des droits civiques ont averti que cette présence dissuaderait des millions de supporters de se rendre aux matchs.",
+      "categorie": "securite",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "Human Rights Watch", "url": "https://www.hrw.org/news/2025/12/03/us-ice-arrest-at-fifa-event-spotlights-dangers-for-world-cup" },
+        { "label": "Yahoo Sports — DHS confirmation", "url": "https://sports.yahoo.com/articles/ice-may-arrests-during-2026-131819169.html" },
+        { "label": "American Immigration Council", "url": "https://www.americanimmigrationcouncil.org/blog/world-cup-ice-visas-iran/" }
+      ],
+      "nouveau": false,
+      "tags": ["ICE", "DHS", "arrestation", "stades", "migrants", "immigration", "Mullin"]
+    },
+    {
+      "id": 22,
+      "date": "2026-03-01",
+      "titre": "Transgender fans face US visa barrier — State Dept requires 'sex assigned at birth' on all applications",
+      "titre_fr": "Les supporters transgenres face à une barrière visa — le Département d'État exige le 'sexe à la naissance' sur toutes les demandes",
+      "corps": "Rules finalized by the US State Department in March 2026, implementing a Trump executive order, require all visa applicants to declare their sex assigned at birth. Any person whose passport gender marker differs from their birth sex risks denial or additional scrutiny. England's LGBTQ+ supporter group Three Lions Pride specifically cited this rule as a primary reason for boycotting the tournament, alongside broader US human rights concerns. The International Federation of Journalists (IFJ) also flagged the measure as affecting transgender media professionals seeking World Cup accreditation. FIFA has made no public statement on the policy and no exemption mechanism was established for World Cup attendees.",
+      "corps_fr": "Des règles finalisées par le Département d'État américain en mars 2026, en application d'un décret de Trump, imposent à tous les demandeurs de visa de déclarer leur sexe assigné à la naissance. Toute personne dont la mention de genre sur le passeport diffère du sexe à la naissance risque un refus ou un contrôle renforcé. Le groupe de supporters LGBTQ+ anglais Three Lions Pride a expressément cité cette règle comme raison principale de son boycott du tournoi. La Fédération internationale des journalistes (FIJ) a également signalé que cette mesure affectait les professionnels des médias transgenres demandant une accréditation. La FIFA n'a émis aucune déclaration publique et aucune dérogation n'a été prévue pour les participants au Mondial.",
+      "categorie": "visa",
+      "severite": 3,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "Sky Sports — LGBTQ fan groups", "url": "https://www.skysports.com/football/news/11095/13550716/world-cup-2026-why-lgbtq-fan-groups-are-not-attending-matches-in-the-united-states" },
+        { "label": "IFJ press release", "url": "https://www.ifj.org/media-centre/news/detail/category/press-releases/article/world-cup-2026-journalists-must-be-able-to-report-unhindered" }
+      ],
+      "nouveau": false,
+      "tags": ["transgenre", "LGBTQ+", "visa", "Département d'État", "discrimination", "Three Lions Pride"]
+    },
     {
       "id": 21,
       "date": "2026-06-08",

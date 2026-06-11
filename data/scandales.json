@@ -2,12 +2,67 @@
   "meta": {
     "version": "1.4",
     "lastUpdate": "2026-06-11",
-    "totalScandales": 29,
-    "totalSources": 78,
+    "totalScandales": 32,
+    "totalSources": 87,
     "maintainer": "fifa26watch",
     "license": "CC BY-SA 4.0"
   },
   "scandales": [
+    {
+      "id": 32,
+      "date": "2026-06-11",
+      "titre": "Guadalajara host city gripped by CJNG cartel surge — 100,000 security forces deployed, residents ask 'security for whom?'",
+      "titre_fr": "Guadalajara sous l'emprise du cartel CJNG — 100 000 forces de sécurité déployées, les habitants s'interrogent : 'sécurité pour qui ?'",
+      "corps": "Guadalajara, hosting four World Cup group-stage matches, is the capital of Jalisco state — dominated by the Jalisco Nueva Generación Cartel (CJNG), one of Mexico's most powerful and violent criminal organizations. When Mexican authorities captured CJNG leader El Mencho in February 2026, the cartel retaliated by torching vehicles and businesses and clashing with security forces across the region. CNN's May 2026 analysis found the city still recovering. Mexico deployed nearly 100,000 security forces under 'Plan Kukulkan' — but Inkstick Media documented that the security operation primarily protects tourist zones and venues, leaving working-class neighborhoods outside the perimeter to face continued cartel presence. Residents asked: 'Security for whom?' The US Embassy in Mexico issued safety advisories for Americans traveling to World Cup host cities.",
+      "corps_fr": "Guadalajara, qui accueille quatre matchs de groupe, est la capitale du Jalisco, État dominé par le Cartel Jalisco Nueva Generación (CJNG), l'une des organisations criminelles les plus puissantes du Mexique. Quand les autorités mexicaines ont capturé El Mencho en février 2026, le cartel a riposté en incendiant des véhicules et commerces à travers la région. Une analyse CNN de mai 2026 a montré que la ville peinait encore à se relever. Le Mexique a déployé près de 100 000 forces de sécurité dans le cadre du 'Plan Kukulkan' — mais Inkstick Media a documenté que l'opération protège principalement les zones touristiques et les stades, laissant les quartiers populaires hors périmètre face à une présence cartel persistante. Les habitants se demandent : 'Sécurité pour qui ?' L'ambassade américaine au Mexique a émis des avertissements de sécurité pour les ressortissants américains se rendant dans les villes hôtes.",
+      "categorie": "securite",
+      "severite": 4,
+      "pays": "Mexique",
+      "sources": [
+        { "label": "CNN — How dangerous is the World Cup in Mexico?", "url": "https://www.cnn.com/2026/05/31/americas/mexico-world-cup-security-latam-intl" },
+        { "label": "Inkstick Media — Security for whom?", "url": "https://inkstickmedia.com/world-cup-security-mexico/" },
+        { "label": "CBS News — US Embassy Mexico safety warning", "url": "https://www.cbsnews.com/news/us-embassy-mexico-safety-risks-world-cup/" },
+        { "label": "Fox RGV — Guadalajara CJNG concerns", "url": "https://foxrgv.tv/fifa-world-cup-mexico-guadalajara-gears-up-for-2026-fifa-world-cup-amid-security-concerns/" }
+      ],
+      "nouveau": true,
+      "tags": ["Guadalajara", "CJNG", "cartel", "El Mencho", "sécurité", "Plan Kukulkan", "Jalisco", "violence"]
+    },
+    {
+      "id": 31,
+      "date": "2026-06-08",
+      "titre": "Shooting near England World Cup base, stabbing near New York venue — gun violence casts shadow on tournament",
+      "titre_fr": "Fusillade près du camp de base de l'Angleterre, agression à l'arme blanche près du site de New York — la violence armée assombrit le tournoi",
+      "corps": "Nine people were injured in a shooting on Troost Avenue in Kansas City on June 7 — less than 7km from the Swope Soccer Village where England will train, and minutes from their team hotel. The same week, a stabbing incident near the MetLife Stadium zone in New York raised additional security concerns ahead of the 8 matches at that venue, including the World Cup Final. Al Jazeera noted both incidents drew attention to the United States' chronic gun violence problem, which had been raised as a structural risk for hosting a global tournament. No connection to World Cup teams or operations was established, but the incidents amplified longstanding calls — including from players' associations — for FIFA to have assessed host nation gun violence as a safety criterion.",
+      "corps_fr": "Neuf personnes ont été blessées lors d'une fusillade sur Troost Avenue à Kansas City le 7 juin — à moins de 7 km du Swope Soccer Village où l'Angleterre s'entraînera, et à quelques minutes de l'hôtel de l'équipe. La même semaine, une agression à l'arme blanche près du MetLife Stadium à New York a ravivé les inquiétudes de sécurité pour les 8 matchs prévus dans ce stade, dont la finale. Al Jazeera a noté que ces deux incidents illustraient le problème chronique de violence armée aux États-Unis, soulevé comme risque structurel pour l'organisation d'un tournoi mondial. Aucun lien direct avec les équipes participantes n'a été établi, mais les incidents ont amplifié les appels — notamment des associations de joueurs — à ce que la FIFA ait évalué la violence par armes à feu comme critère de sécurité de l'attribution.",
+      "categorie": "securite",
+      "severite": 4,
+      "pays": "États-Unis",
+      "sources": [
+        { "label": "Al Jazeera — Kansas City & New York incidents", "url": "https://www.aljazeera.com/sports/2026/6/8/new-york-stabbing-kansas-city-shooting-raise-world-cup-security-concerns" },
+        { "label": "Outlook India — Kansas City shooting", "url": "https://www.outlookindia.com/sports/football/fifa-world-cup-2026-england-team-base-mass-shooting-nine-injured-kansas-city-report" },
+        { "label": "Foot Africa", "url": "https://foot-africa.com/en/news/world-cup-2026-9-injured-in-armed-attack-near-england-team-base-camp-1234954/" }
+      ],
+      "nouveau": true,
+      "tags": ["fusillade", "Kansas City", "Angleterre", "MetLife", "New York", "armes à feu", "violence", "sécurité"]
+    },
+    {
+      "id": 30,
+      "date": "2026-06-03",
+      "titre": "FIFA cancels 75% of host-city hotel reservations without penalty — hotels left devastated as fan bookings collapse",
+      "titre_fr": "La FIFA annule 75 % de ses réservations hôtelières sans pénalités — les hôtels dévastés alors que les réservations de supporters s'effondrent",
+      "corps": "FIFA cancelled up to 75% of the hotel rooms it had block-reserved across host cities — in some cases just months before kickoff — without paying standard cancellation penalty fees, according to reporting by KSHB and The Travel. Over 2,000 rooms were cancelled in Philadelphia, 15,000 in Vancouver, 1,000 in Atlanta, and 800 in Mexico City. Hotels had raised rates and turned away other bookings in anticipation of guaranteed FIFA occupancy; they were left with empty rooms at inflated prices. An American Hotel & Lodging Association survey found 80% of host-city hotels running below initial booking forecasts. FIFA claimed rooms had been reserved for operational staff, not fans, and called the cancellations routine — but offered no compensation to properties left exposed.",
+      "corps_fr": "La FIFA a annulé jusqu'à 75 % des chambres d'hôtel qu'elle avait réservées en bloc dans les villes hôtes — parfois quelques mois seulement avant le coup d'envoi — sans payer les pénalités d'annulation contractuelles habituelles, selon KSHB et The Travel. Plus de 2 000 chambres ont été annulées à Philadelphie, 15 000 à Vancouver, 1 000 à Atlanta et 800 à Mexico. Les hôtels avaient augmenté leurs tarifs et refusé d'autres clients en anticipant une occupation garantie par la FIFA ; ils se retrouvent avec des chambres vides à des prix gonflés. Une enquête de l'American Hotel & Lodging Association révèle que 80 % des hôtels des villes hôtes sont en dessous des prévisions de réservation initiales. La FIFA a qualifié les annulations de 'routine', sans indemnisation pour les établissements pénalisés.",
+      "categorie": "gouvernance",
+      "severite": 3,
+      "pays": "USA / Canada / Mexique",
+      "sources": [
+        { "label": "KSHB — FIFA cancelled 75% of KC rooms, no penalty", "url": "https://www.kshb.com/news/local-news/kansas/johnson-county/fifa-canceled-75-of-reserved-rooms-months-before-world-cup-no-penalty-fees-paid" },
+        { "label": "The Travel — thousands of cancellations", "url": "https://www.thetravel.com/fifa-world-cup-hotel-cancellations-philadelphia/" },
+        { "label": "Far Out Magazine — FIFA hotel scandal", "url": "https://faroutmagazine.co.uk/what-is-the-fifa-hotel-scandal-and-how-does-it-impact-the-2026-world-cup/" }
+      ],
+      "nouveau": true,
+      "tags": ["hôtels", "annulations", "FIFA", "Vancouver", "Philadelphie", "Atlanta", "économie", "hôtellerie"]
+    },
     {
       "id": 29,
       "date": "2026-06-11",

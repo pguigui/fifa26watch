@@ -351,6 +351,64 @@
       font-size: .9rem;
     }
 
+    /* ─────────────────── Dashboard ─────────────────── */
+    #dashboard { margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: .85rem; }
+
+    .dash-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .75rem;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .9rem 1rem;
+      text-align: center;
+    }
+    .stat-card.stat-alert { border-color: rgba(239,68,68,.35); }
+    .stat-card.stat-day   { border-color: rgba(212,160,23,.35); }
+    .stat-num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+    .stat-card.stat-alert .stat-num { color: var(--red); }
+    .stat-card.stat-day   .stat-num { font-size: 1.4rem; color: var(--text); }
+    .stat-lbl {
+      font-size: .65rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      margin-top: .25rem;
+    }
+    .dash-row {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: .75rem;
+      align-items: start;
+    }
+    .dash-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .9rem 1.1rem;
+    }
+    .dash-panel-title {
+      font-size: .65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin-bottom: .65rem;
+    }
+
+    @media (max-width: 768px) {
+      .dash-stats { grid-template-columns: repeat(2, 1fr); }
+      .dash-row   { grid-template-columns: 1fr; }
+    }
+
     /* ─────────────────── Footer ─────────────────── */
     footer {
       text-align: center;
@@ -451,6 +509,7 @@
   </aside>
 
   <div class="content">
+    <section id="dashboard" aria-label="Statistics"></section>
     <div id="grid" role="list"></div>
     <p id="empty" role="status"></p>
   </div>
@@ -540,6 +599,143 @@
     return paras.join('');
   }
 
+  function buildDashboard() {
+    const el = document.getElementById('dashboard');
+    if (!el || !scandales.length) return;
+
+    const SEV_COLOR = { 5:'#ef4444', 4:'#f97316', 3:'#eab308', 2:'#22c55e', 1:'#60a5fa' };
+    const CAT_COLOR = {
+      visa:'#f87171', securite:'#60a5fa', gouvernance:'#a78bfa',
+      corruption:'#fbbf24', droits:'#34d399', economie:'#38bdf8', environnement:'#6ee7b7'
+    };
+    const isF = lang === 'fr';
+
+    // ── Stats row ──────────────────────────────────
+    const total     = scandales.length;
+    const highSev   = scandales.filter(s => s.severite >= 4).length;
+    const countries = new Set(scandales.map(s => s.pays).filter(Boolean)).size;
+    const tStart    = new Date('2026-06-11');
+    const tEnd      = new Date('2026-07-19');
+    const today     = new Date();
+    const dayNum    = Math.max(1, Math.round((today - tStart) / 864e5) + 1);
+    const totalDays = Math.round((tEnd - tStart) / 864e5) + 1;
+
+    const statCards = [
+      { num: total,              lbl: isF ? 'scandales'       : 'scandals',          cls: '' },
+      { num: highSev,            lbl: isF ? 'sévérité ≥ 4'   : 'severity ≥ 4',      cls: 'stat-alert' },
+      { num: countries,          lbl: isF ? 'pays impliqués'  : 'countries affected', cls: '' },
+      { num: `${Math.min(dayNum, totalDays)}/${totalDays}`, lbl: isF ? 'jours tournoi' : 'tournament days', cls: 'stat-day' }
+    ].map(({ num, lbl, cls }) =>
+      `<div class="stat-card ${cls}"><div class="stat-num">${num}</div><div class="stat-lbl">${lbl}</div></div>`
+    ).join('');
+
+    // ── Timeline SVG (2026 only, proportional time axis) ──
+    const byDate = {};
+    scandales.filter(s => s.date.startsWith('2026')).forEach(s => {
+      if (!byDate[s.date]) byDate[s.date] = { count: 0, maxSev: 0, titles: [] };
+      byDate[s.date].count++;
+      byDate[s.date].maxSev = Math.max(byDate[s.date].maxSev, s.severite);
+      byDate[s.date].titles.push((isF ? s.titre_fr : null) ?? s.titre ?? '');
+    });
+    const dates  = Object.keys(byDate).sort();
+    const maxCnt = Math.max(...dates.map(d => byDate[d].count));
+    const W = 560, H = 120, PL = 22, PR = 6, PT = 6, PB = 28;
+    const cW = W - PL - PR, cH = H - PT - PB;
+    const t0 = new Date(dates[0] + 'T12:00:00').getTime();
+    const t1 = new Date(dates[dates.length - 1] + 'T12:00:00').getTime();
+    const tSpan = t1 - t0 || 1;
+    const bW = Math.max(9, Math.min(24, cW / dates.length * 0.55));
+
+    const gridLines = Array.from({ length: maxCnt + 1 }, (_, v) => {
+      const y = PT + cH - (v / maxCnt) * cH;
+      return `<line x1="${PL}" x2="${W-PR}" y1="${y}" y2="${y}" stroke="#2e3f56" stroke-width=".5"/>
+              <text x="${PL-3}" y="${y+3}" text-anchor="end" font-size="7" fill="#475569">${v}</text>`;
+    }).join('');
+
+    const bars = dates.map(d => {
+      const { count, maxSev, titles } = byDate[d];
+      const x  = PL + ((new Date(d + 'T12:00:00').getTime() - t0) / tSpan) * cW;
+      const bh = (count / maxCnt) * cH;
+      return `<rect x="${x - bW/2}" y="${PT + cH - bh}" width="${bW}" height="${bh}"
+                    fill="${SEV_COLOR[maxSev]||'#60a5fa'}" rx="3" opacity=".85">
+                <title>${d}: ${count} scandale${count>1?'s':''}\n• ${titles.join('\n• ')}</title>
+              </rect>
+              <text x="${x}" y="${H-3}" text-anchor="middle" font-size="7" fill="#64748b">${d.slice(5).replace('-','/')}</text>`;
+    }).join('');
+
+    const timelineSVG = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg"
+      style="width:100%;height:auto;display:block">${gridLines}${bars}</svg>`;
+
+    // ── Donut SVG ──────────────────────────────────
+    const catCounts = {};
+    scandales.forEach(s => { catCounts[s.categorie] = (catCounts[s.categorie]||0) + 1; });
+    const catEntries = Object.entries(catCounts).sort((a, b) => b[1] - a[1]);
+    let angle = -Math.PI / 2;
+    const slices = catEntries.map(([cat, cnt]) => {
+      const sweep = (cnt / total) * 2 * Math.PI;
+      const a2 = angle + sweep;
+      const r = 46, ri = 24, cx = 52, cy = 52;
+      const [c1, s1, c2, s2] = [Math.cos(angle), Math.sin(angle), Math.cos(a2), Math.sin(a2)];
+      const lg = sweep > Math.PI ? 1 : 0;
+      const path = `M${cx+r*c1},${cy+r*s1} A${r},${r} 0 ${lg},1 ${cx+r*c2},${cy+r*s2} L${cx+ri*c2},${cy+ri*s2} A${ri},${ri} 0 ${lg},0 ${cx+ri*c1},${cy+ri*s1}Z`;
+      const color = CAT_COLOR[cat] || '#94a3b8';
+      const lbl = I18N[lang].cat[cat] ?? cat;
+      angle = a2;
+      return { path, color, cnt, lbl };
+    });
+
+    const donutSVG = `<svg viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"
+      style="width:100px;height:100px;flex-shrink:0">
+      ${slices.map(s => `<path d="${s.path}" fill="${s.color}" opacity=".85"><title>${s.lbl}: ${s.cnt}</title></path>`).join('')}
+      <text x="52" y="56" text-anchor="middle" font-size="11" font-weight="800" fill="#f1f5f9">${total}</text>
+    </svg>`;
+
+    const legend = slices.map(s =>
+      `<div style="display:flex;align-items:center;gap:.35rem;font-size:.7rem;color:var(--muted)">
+        <span style="width:9px;height:9px;border-radius:2px;background:${s.color};flex-shrink:0"></span>
+        <span style="flex:1">${s.lbl}</span>
+        <b style="color:var(--text)">${s.cnt}</b>
+      </div>`
+    ).join('');
+
+    // ── Heatmap ────────────────────────────────────
+    const sorted = [...scandales].sort((a, b) => a.date.localeCompare(b.date));
+    const squares = sorted.map(s => {
+      const t = (isF ? s.titre_fr : null) ?? s.titre ?? '';
+      return `<span title="${s.date} · ${t}"
+        style="display:inline-block;width:15px;height:15px;border-radius:3px;background:${SEV_COLOR[s.severite]||'#60a5fa'};opacity:.82;margin:2px;cursor:default"></span>`;
+    }).join('');
+
+    const heatLegend = [5,4,3,2,1].map(v =>
+      `<span style="display:flex;align-items:center;gap:.3rem;font-size:.67rem;color:var(--muted)">
+        <span style="width:10px;height:10px;border-radius:2px;background:${SEV_COLOR[v]}"></span>
+        ${isF ? 'Sév.' : 'Sev.'} ${v}
+      </span>`
+    ).join('');
+
+    // ── Compose ────────────────────────────────────
+    el.innerHTML = `
+      <div class="dash-stats">${statCards}</div>
+      <div class="dash-row">
+        <div class="dash-panel">
+          <div class="dash-panel-title">📅 ${isF ? 'Scandales par jour en 2026 (axe proportionnel au temps réel)' : 'Scandals per day in 2026 (time-proportional axis)'}</div>
+          ${timelineSVG}
+        </div>
+        <div class="dash-panel">
+          <div class="dash-panel-title">🗂 ${isF ? 'Par catégorie' : 'By category'}</div>
+          <div style="display:flex;align-items:center;gap:.65rem;flex-wrap:wrap">
+            ${donutSVG}
+            <div style="display:flex;flex-direction:column;gap:.35rem;flex:1;min-width:100px">${legend}</div>
+          </div>
+        </div>
+      </div>
+      <div class="dash-panel">
+        <div class="dash-panel-title">🌡 ${isF ? 'Sévérité — tous les scandales par ordre chronologique (survol pour détails)' : 'Severity map — all scandals chronological (hover for details)'}</div>
+        <div style="display:flex;flex-wrap:wrap;padding:.1rem 0;line-height:1">${squares}</div>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.5rem">${heatLegend}</div>
+      </div>`;
+  }
+
   function applyLang() {
     document.documentElement.lang = lang;
     document.getElementById('header-subtitle').textContent = tr('subtitle');
@@ -559,6 +755,7 @@
     sortEl.value = prev || currentSort;
 
     buildSidebar();
+    buildDashboard();
     render();
   }
 

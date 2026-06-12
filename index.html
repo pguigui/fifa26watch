@@ -671,6 +671,13 @@
     const timelineSVG = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg"
       style="width:100%;height:auto;display:block">${gridLines}${bars}</svg>`;
 
+    const sevLegend = [5,4,3,2,1].map(v =>
+      `<span style="display:flex;align-items:center;gap:.3rem;font-size:.67rem;color:var(--muted)">
+        <span style="width:10px;height:10px;border-radius:2px;background:${SEV_COLOR[v]}${v<=2?';outline:2px solid rgba(255,255,255,.5);outline-offset:1px':''}"></span>
+        ${isF ? 'Sév.' : 'Sev.'}&nbsp;${v}
+      </span>`
+    ).join('');
+
     // ── Donut SVG ──────────────────────────────────
     const catCounts = {};
     scandales.forEach(s => { catCounts[s.categorie] = (catCounts[s.categorie]||0) + 1; });
@@ -707,8 +714,9 @@
     const sorted = [...scandales].sort((a, b) => a.date.localeCompare(b.date));
     const squares = sorted.map(s => {
       const t = (isF ? s.titre_fr : null) ?? s.titre ?? '';
+      const outline = s.severite <= 2 ? ';outline:2px solid rgba(255,255,255,.55);outline-offset:1px' : '';
       return `<span title="${s.date} · ${t}"
-        style="display:inline-block;width:15px;height:15px;border-radius:3px;background:${SEV_COLOR[s.severite]||'#60a5fa'};opacity:.82;margin:2px;cursor:default"></span>`;
+        style="display:inline-block;width:15px;height:15px;border-radius:3px;background:${SEV_COLOR[s.severite]||'#60a5fa'};opacity:.9;margin:2px;cursor:default${outline}"></span>`;
     }).join('');
 
     const heatLegend = [5,4,3,2,1].map(v =>
@@ -725,6 +733,7 @@
         <div class="dash-panel">
           <div class="dash-panel-title">📅 ${isF ? 'Scandales par jour — mai/juin 2026 (axe proportionnel)' : 'Scandals per day — May/June 2026 (time-proportional axis)'}</div>
           ${timelineSVG}
+          <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.4rem">${sevLegend}</div>
         </div>
         <div class="dash-panel">
           <div class="dash-panel-title">🗂 ${isF ? 'Par catégorie' : 'By category'}</div>

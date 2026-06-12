@@ -613,7 +613,12 @@
     // ── Stats row ──────────────────────────────────
     const total     = scandales.length;
     const highSev   = scandales.filter(s => s.severite >= 4).length;
-    const countries = new Set(scandales.map(s => s.pays).filter(Boolean)).size;
+    const NATION_TAGS = new Set(['Sénégal','Iran','Irak','Somalie','Côte d\'Ivoire','Haïti',
+      'Ouzbékistan','Algérie','Égypte','Arabie Saoudite','Bolivie','Mexique','Angleterre',
+      'Maroc','Tunisie','Ghana','Jordanie','Uruguay','Argentine']);
+    const affected = new Set();
+    scandales.forEach(s => (s.tags ?? []).forEach(t => { if (NATION_TAGS.has(t)) affected.add(t); }));
+    const countries = affected.size;
     const tStart    = new Date('2026-06-11');
     const tEnd      = new Date('2026-07-19');
     const today     = new Date();
@@ -623,7 +628,7 @@
     const statCards = [
       { num: total,              lbl: isF ? 'scandales'       : 'scandals',          cls: '' },
       { num: highSev,            lbl: isF ? 'sévérité ≥ 4'   : 'severity ≥ 4',      cls: 'stat-alert' },
-      { num: countries,          lbl: isF ? 'pays impliqués'  : 'countries affected', cls: '' },
+      { num: countries,          lbl: isF ? 'nations affectées' : 'nations affected',   cls: '' },
       { num: `${Math.min(dayNum, totalDays)}/${totalDays}`, lbl: isF ? 'jours tournoi' : 'tournament days', cls: 'stat-day' }
     ].map(({ num, lbl, cls }) =>
       `<div class="stat-card ${cls}"><div class="stat-num">${num}</div><div class="stat-lbl">${lbl}</div></div>`
@@ -631,7 +636,7 @@
 
     // ── Timeline SVG (2026 only, proportional time axis) ──
     const byDate = {};
-    scandales.filter(s => s.date.startsWith('2026')).forEach(s => {
+    scandales.filter(s => s.date >= '2026-05-01').forEach(s => {
       if (!byDate[s.date]) byDate[s.date] = { count: 0, maxSev: 0, titles: [] };
       byDate[s.date].count++;
       byDate[s.date].maxSev = Math.max(byDate[s.date].maxSev, s.severite);
@@ -718,7 +723,7 @@
       <div class="dash-stats">${statCards}</div>
       <div class="dash-row">
         <div class="dash-panel">
-          <div class="dash-panel-title">📅 ${isF ? 'Scandales par jour en 2026 (axe proportionnel au temps réel)' : 'Scandals per day in 2026 (time-proportional axis)'}</div>
+          <div class="dash-panel-title">📅 ${isF ? 'Scandales par jour — mai/juin 2026 (axe proportionnel)' : 'Scandals per day — May/June 2026 (time-proportional axis)'}</div>
           ${timelineSVG}
         </div>
         <div class="dash-panel">

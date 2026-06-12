@@ -19,13 +19,34 @@
       "severite": 4,
       "pays": "Mexique",
       "sources": [
-        { "label": "CNN — How dangerous is the World Cup in Mexico?", "url": "https://www.cnn.com/2026/05/31/americas/mexico-world-cup-security-latam-intl" },
-        { "label": "Inkstick Media — Security for whom?", "url": "https://inkstickmedia.com/world-cup-security-mexico/" },
-        { "label": "CBS News — US Embassy Mexico safety warning", "url": "https://www.cbsnews.com/news/us-embassy-mexico-safety-risks-world-cup/" },
-        { "label": "Fox RGV — Guadalajara CJNG concerns", "url": "https://foxrgv.tv/fifa-world-cup-mexico-guadalajara-gears-up-for-2026-fifa-world-cup-amid-security-concerns/" }
+        {
+          "label": "CNN — How dangerous is the World Cup in Mexico?",
+          "url": "https://www.cnn.com/2026/05/31/americas/mexico-world-cup-security-latam-intl"
+        },
+        {
+          "label": "Inkstick Media — Security for whom?",
+          "url": "https://inkstickmedia.com/world-cup-security-mexico/"
+        },
+        {
+          "label": "CBS News — US Embassy Mexico safety warning",
+          "url": "https://www.cbsnews.com/news/us-embassy-mexico-safety-risks-world-cup/"
+        },
+        {
+          "label": "Fox RGV — Guadalajara CJNG concerns",
+          "url": "https://foxrgv.tv/fifa-world-cup-mexico-guadalajara-gears-up-for-2026-fifa-world-cup-amid-security-concerns/"
+        }
       ],
       "nouveau": true,
-      "tags": ["Guadalajara", "CJNG", "cartel", "El Mencho", "sécurité", "Plan Kukulkan", "Jalisco", "violence"]
+      "tags": [
+        "Guadalajara",
+        "CJNG",
+        "cartel",
+        "El Mencho",
+        "sécurité",
+        "Plan Kukulkan",
+        "Jalisco",
+        "violence"
+      ]
     },
     {
       "id": 31,
@@ -38,12 +59,30 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Al Jazeera — Kansas City & New York incidents", "url": "https://www.aljazeera.com/sports/2026/6/8/new-york-stabbing-kansas-city-shooting-raise-world-cup-security-concerns" },
-        { "label": "Outlook India — Kansas City shooting", "url": "https://www.outlookindia.com/sports/football/fifa-world-cup-2026-england-team-base-mass-shooting-nine-injured-kansas-city-report" },
-        { "label": "Foot Africa", "url": "https://foot-africa.com/en/news/world-cup-2026-9-injured-in-armed-attack-near-england-team-base-camp-1234954/" }
+        {
+          "label": "Al Jazeera — Kansas City & New York incidents",
+          "url": "https://www.aljazeera.com/sports/2026/6/8/new-york-stabbing-kansas-city-shooting-raise-world-cup-security-concerns"
+        },
+        {
+          "label": "Outlook India — Kansas City shooting",
+          "url": "https://www.outlookindia.com/sports/football/fifa-world-cup-2026-england-team-base-mass-shooting-nine-injured-kansas-city-report"
+        },
+        {
+          "label": "Foot Africa",
+          "url": "https://foot-africa.com/en/news/world-cup-2026-9-injured-in-armed-attack-near-england-team-base-camp-1234954/"
+        }
       ],
       "nouveau": true,
-      "tags": ["fusillade", "Kansas City", "Angleterre", "MetLife", "New York", "armes à feu", "violence", "sécurité"]
+      "tags": [
+        "fusillade",
+        "Kansas City",
+        "Angleterre",
+        "MetLife",
+        "New York",
+        "armes à feu",
+        "violence",
+        "sécurité"
+      ]
     },
     {
       "id": 30,
@@ -56,12 +95,30 @@
       "severite": 3,
       "pays": "USA / Canada / Mexique",
       "sources": [
-        { "label": "KSHB — FIFA cancelled 75% of KC rooms, no penalty", "url": "https://www.kshb.com/news/local-news/kansas/johnson-county/fifa-canceled-75-of-reserved-rooms-months-before-world-cup-no-penalty-fees-paid" },
-        { "label": "The Travel — thousands of cancellations", "url": "https://www.thetravel.com/fifa-world-cup-hotel-cancellations-philadelphia/" },
-        { "label": "Far Out Magazine — FIFA hotel scandal", "url": "https://faroutmagazine.co.uk/what-is-the-fifa-hotel-scandal-and-how-does-it-impact-the-2026-world-cup/" }
+        {
+          "label": "KSHB — FIFA cancelled 75% of KC rooms, no penalty",
+          "url": "https://www.kshb.com/news/local-news/kansas/johnson-county/fifa-canceled-75-of-reserved-rooms-months-before-world-cup-no-penalty-fees-paid"
+        },
+        {
+          "label": "The Travel — thousands of cancellations",
+          "url": "https://www.thetravel.com/fifa-world-cup-hotel-cancellations-philadelphia/"
+        },
+        {
+          "label": "Far Out Magazine — FIFA hotel scandal",
+          "url": "https://faroutmagazine.co.uk/what-is-the-fifa-hotel-scandal-and-how-does-it-impact-the-2026-world-cup/"
+        }
       ],
       "nouveau": true,
-      "tags": ["hôtels", "annulations", "FIFA", "Vancouver", "Philadelphie", "Atlanta", "économie", "hôtellerie"]
+      "tags": [
+        "hôtels",
+        "annulations",
+        "FIFA",
+        "Vancouver",
+        "Philadelphie",
+        "Atlanta",
+        "économie",
+        "hôtellerie"
+      ]
     },
     {
       "id": 29,
@@ -74,13 +131,34 @@
       "severite": 3,
       "pays": "Mexique",
       "sources": [
-        { "label": "PBS NewsHour", "url": "https://www.pbs.org/newshour/world/world-cup-celebrations-clash-with-social-tensions-in-mexico" },
-        { "label": "Al Jazeera", "url": "https://www.aljazeera.com/sports/2026/6/11/mexico-braced-for-celebrations-protests-as-world-cup-opens-amid-tensions" },
-        { "label": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/49020475/mexico-city-world-cup-fan-fest-protests-president-claudia-sheibaum" },
-        { "label": "NPR", "url": "https://www.npr.org/2026/06/06/nx-s1-5847853/demonstrations-cause-disruptions-across-mexico-city-ahead-of-fifa-world-cup-opening" }
+        {
+          "label": "PBS NewsHour",
+          "url": "https://www.pbs.org/newshour/world/world-cup-celebrations-clash-with-social-tensions-in-mexico"
+        },
+        {
+          "label": "Al Jazeera",
+          "url": "https://www.aljazeera.com/sports/2026/6/11/mexico-braced-for-celebrations-protests-as-world-cup-opens-amid-tensions"
+        },
+        {
+          "label": "ESPN",
+          "url": "https://www.espn.com/soccer/story/_/id/49020475/mexico-city-world-cup-fan-fest-protests-president-claudia-sheibaum"
+        },
+        {
+          "label": "NPR",
+          "url": "https://www.npr.org/2026/06/06/nx-s1-5847853/demonstrations-cause-disruptions-across-mexico-city-ahead-of-fifa-world-cup-opening"
+        }
       ],
       "nouveau": true,
-      "tags": ["Mexique", "Mexico City", "Zócalo", "CNTE", "enseignants", "disparus", "protestation", "ouverture"]
+      "tags": [
+        "Mexique",
+        "Mexico City",
+        "Zócalo",
+        "CNTE",
+        "enseignants",
+        "disparus",
+        "protestation",
+        "ouverture"
+      ]
     },
     {
       "id": 28,
@@ -93,11 +171,26 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Sky Sports", "url": "https://www.skysports.com/football/news/11095/13550716/world-cup-2026-why-lgbtq-fan-groups-are-not-attending-matches-in-the-united-states" },
-        { "label": "FavsNews — Egypt & Iran vs Seattle Pride", "url": "https://favs.news/fifa-seattle-pride-world-cup-egypt-iran-objections/" }
+        {
+          "label": "Sky Sports",
+          "url": "https://www.skysports.com/football/news/11095/13550716/world-cup-2026-why-lgbtq-fan-groups-are-not-attending-matches-in-the-united-states"
+        },
+        {
+          "label": "FavsNews — Egypt & Iran vs Seattle Pride",
+          "url": "https://favs.news/fifa-seattle-pride-world-cup-egypt-iran-objections/"
+        }
       ],
       "nouveau": true,
-      "tags": ["LGBTQ+", "Three Lions Pride", "Seattle", "Égypte", "Iran", "boycott", "transgenre", "droits humains"]
+      "tags": [
+        "LGBTQ+",
+        "Three Lions Pride",
+        "Seattle",
+        "Égypte",
+        "Iran",
+        "boycott",
+        "transgenre",
+        "droits humains"
+      ]
     },
     {
       "id": 27,
@@ -110,12 +203,29 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "SuperSport", "url": "https://supersport.com/football/news/c9573608-6e4e-4293-a434-ef585bb0ecf4/ivory-coast-supporters-banned-from-world-cup-says-fan-body" },
-        { "label": "The Sun Nigeria", "url": "https://thesun.ng/2026-world-cup-ivory-coast-fans-denied-us-visas/" },
-        { "label": "Vanguard News", "url": "https://www.vanguardngr.com/2026/06/us-bans-ivory-coat-supporters-from-world-cup/" }
+        {
+          "label": "SuperSport",
+          "url": "https://supersport.com/football/news/c9573608-6e4e-4293-a434-ef585bb0ecf4/ivory-coast-supporters-banned-from-world-cup-says-fan-body"
+        },
+        {
+          "label": "The Sun Nigeria",
+          "url": "https://thesun.ng/2026-world-cup-ivory-coast-fans-denied-us-visas/"
+        },
+        {
+          "label": "Vanguard News",
+          "url": "https://www.vanguardngr.com/2026/06/us-bans-ivory-coat-supporters-from-world-cup/"
+        }
       ],
       "nouveau": true,
-      "tags": ["Côte d'Ivoire", "supporters", "visa", "Éléphants", "Adonis", "travel ban", "exclusion"]
+      "tags": [
+        "Côte d'Ivoire",
+        "supporters",
+        "visa",
+        "Éléphants",
+        "Adonis",
+        "travel ban",
+        "exclusion"
+      ]
     },
     {
       "id": 26,
@@ -128,12 +238,30 @@
       "severite": 3,
       "pays": "États-Unis",
       "sources": [
-        { "label": "NPR", "url": "https://www.npr.org/2026/06/06/nx-s1-5848682/sofi-stadium-strike-world-cup" },
-        { "label": "NBC Los Angeles", "url": "https://www.nbclosangeles.com/world-cup/sofi-stadium-workers-strike-world-cup/3901439/" },
-        { "label": "ESPN", "url": "https://www.espn.com/espn/story/_/id/49011203/sofi-stadium-workers-union-reaches-deal-avoid-strike-world-cup" }
+        {
+          "label": "NPR",
+          "url": "https://www.npr.org/2026/06/06/nx-s1-5848682/sofi-stadium-strike-world-cup"
+        },
+        {
+          "label": "NBC Los Angeles",
+          "url": "https://www.nbclosangeles.com/world-cup/sofi-stadium-workers-strike-world-cup/3901439/"
+        },
+        {
+          "label": "ESPN",
+          "url": "https://www.espn.com/espn/story/_/id/49011203/sofi-stadium-workers-union-reaches-deal-avoid-strike-world-cup"
+        }
       ],
       "nouveau": true,
-      "tags": ["SoFi Stadium", "grève", "ICE", "travailleurs", "Los Angeles", "salaires", "immigration", "Legends Hospitality"]
+      "tags": [
+        "SoFi Stadium",
+        "grève",
+        "ICE",
+        "travailleurs",
+        "Los Angeles",
+        "salaires",
+        "immigration",
+        "Legends Hospitality"
+      ]
     },
     {
       "id": 25,
@@ -146,12 +274,29 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "AllAfrica — AIPS letter", "url": "https://allafrica.com/stories/202606090611.html" },
-        { "label": "Africa Newsroom — communiqué AIPS", "url": "https://www.africa-newsroom.com/press/world-cup-accredited-journalists-raise-concerns-over-unfair-united-states-us-visa-restrictions-aips-calls-on-fifa-to-intervene?lang=en" },
-        { "label": "APA News", "url": "https://apanews.net/politicised-visa-regime-overshadowing-2026-fifa-world-cup/" }
+        {
+          "label": "AllAfrica — AIPS letter",
+          "url": "https://allafrica.com/stories/202606090611.html"
+        },
+        {
+          "label": "Africa Newsroom — communiqué AIPS",
+          "url": "https://www.africa-newsroom.com/press/world-cup-accredited-journalists-raise-concerns-over-unfair-united-states-us-visa-restrictions-aips-calls-on-fifa-to-intervene?lang=en"
+        },
+        {
+          "label": "APA News",
+          "url": "https://apanews.net/politicised-visa-regime-overshadowing-2026-fifa-world-cup/"
+        }
       ],
       "nouveau": true,
-      "tags": ["journalistes", "AIPS", "visa", "liberté de la presse", "Afrique", "Iran", "accréditation"]
+      "tags": [
+        "journalistes",
+        "AIPS",
+        "visa",
+        "liberté de la presse",
+        "Afrique",
+        "Iran",
+        "accréditation"
+      ]
     },
     {
       "id": 24,
@@ -164,12 +309,29 @@
       "severite": 3,
       "pays": "États-Unis",
       "sources": [
-        { "label": "OutKick / Fox News", "url": "https://www.foxnews.com/outkick-sports/fifa-faces-lawsuit-plan-ban-irans-pre-revolution-lion-sun-flag-2026-world-cup-stadiums" },
-        { "label": "Radio Free Europe / Radio Liberty", "url": "https://www.rferl.org/a/iran-fifa-lion-sun-flag-ban-world-cup/33761122.html" },
-        { "label": "Iran International", "url": "https://www.iranintl.com/en/202605255784" }
+        {
+          "label": "OutKick / Fox News",
+          "url": "https://www.foxnews.com/outkick-sports/fifa-faces-lawsuit-plan-ban-irans-pre-revolution-lion-sun-flag-2026-world-cup-stadiums"
+        },
+        {
+          "label": "Radio Free Europe / Radio Liberty",
+          "url": "https://www.rferl.org/a/iran-fifa-lion-sun-flag-ban-world-cup/33761122.html"
+        },
+        {
+          "label": "Iran International",
+          "url": "https://www.iranintl.com/en/202605255784"
+        }
       ],
       "nouveau": false,
-      "tags": ["Iran", "drapeau", "Lion et Soleil", "censure", "diaspora", "Premier amendement", "procès"]
+      "tags": [
+        "Iran",
+        "drapeau",
+        "Lion et Soleil",
+        "censure",
+        "diaspora",
+        "Premier amendement",
+        "procès"
+      ]
     },
     {
       "id": 23,
@@ -182,12 +344,29 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Human Rights Watch", "url": "https://www.hrw.org/news/2025/12/03/us-ice-arrest-at-fifa-event-spotlights-dangers-for-world-cup" },
-        { "label": "Yahoo Sports — DHS confirmation", "url": "https://sports.yahoo.com/articles/ice-may-arrests-during-2026-131819169.html" },
-        { "label": "American Immigration Council", "url": "https://www.americanimmigrationcouncil.org/blog/world-cup-ice-visas-iran/" }
+        {
+          "label": "Human Rights Watch",
+          "url": "https://www.hrw.org/news/2025/12/03/us-ice-arrest-at-fifa-event-spotlights-dangers-for-world-cup"
+        },
+        {
+          "label": "Yahoo Sports — DHS confirmation",
+          "url": "https://sports.yahoo.com/articles/ice-may-arrests-during-2026-131819169.html"
+        },
+        {
+          "label": "American Immigration Council",
+          "url": "https://www.americanimmigrationcouncil.org/blog/world-cup-ice-visas-iran/"
+        }
       ],
       "nouveau": false,
-      "tags": ["ICE", "DHS", "arrestation", "stades", "migrants", "immigration", "Mullin"]
+      "tags": [
+        "ICE",
+        "DHS",
+        "arrestation",
+        "stades",
+        "migrants",
+        "immigration",
+        "Mullin"
+      ]
     },
     {
       "id": 22,
@@ -200,11 +379,24 @@
       "severite": 3,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Sky Sports — LGBTQ fan groups", "url": "https://www.skysports.com/football/news/11095/13550716/world-cup-2026-why-lgbtq-fan-groups-are-not-attending-matches-in-the-united-states" },
-        { "label": "IFJ press release", "url": "https://www.ifj.org/media-centre/news/detail/category/press-releases/article/world-cup-2026-journalists-must-be-able-to-report-unhindered" }
+        {
+          "label": "Sky Sports — LGBTQ fan groups",
+          "url": "https://www.skysports.com/football/news/11095/13550716/world-cup-2026-why-lgbtq-fan-groups-are-not-attending-matches-in-the-united-states"
+        },
+        {
+          "label": "IFJ press release",
+          "url": "https://www.ifj.org/media-centre/news/detail/category/press-releases/article/world-cup-2026-journalists-must-be-able-to-report-unhindered"
+        }
       ],
       "nouveau": false,
-      "tags": ["transgenre", "LGBTQ+", "visa", "Département d'État", "discrimination", "Three Lions Pride"]
+      "tags": [
+        "transgenre",
+        "LGBTQ+",
+        "visa",
+        "Département d'État",
+        "discrimination",
+        "Three Lions Pride"
+      ]
     },
     {
       "id": 21,
@@ -222,12 +414,29 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Newsweek", "url": "https://www.newsweek.com/sports/ice-bag-searches-and-denied-visashow-world-cup-teams-welcomed-to-us-12048074" },
-        { "label": "Sports & Crime", "url": "https://www.sportsandcrime.com/p/the-us-world-cup-travel-warnings" },
-        { "label": "Egypt Daily News", "url": "https://egyptdailynews.com/fifa-under-fire-as-world-cup-2026-becomes-a-battlefield-of-politics-borders-and-uneven-standards/" }
+        {
+          "label": "Newsweek",
+          "url": "https://www.newsweek.com/sports/ice-bag-searches-and-denied-visashow-world-cup-teams-welcomed-to-us-12048074"
+        },
+        {
+          "label": "Sports & Crime",
+          "url": "https://www.sportsandcrime.com/p/the-us-world-cup-travel-warnings"
+        },
+        {
+          "label": "Egypt Daily News",
+          "url": "https://egyptdailynews.com/fifa-under-fire-as-world-cup-2026-becomes-a-battlefield-of-politics-borders-and-uneven-standards/"
+        }
       ],
       "nouveau": true,
-      "tags": ["Sénégal", "Ouzbékistan", "Cannavaro", "fouille", "tarmac", "chiens renifleurs", "discrimination"]
+      "tags": [
+        "Sénégal",
+        "Ouzbékistan",
+        "Cannavaro",
+        "fouille",
+        "tarmac",
+        "chiens renifleurs",
+        "discrimination"
+      ]
     },
     {
       "id": 20,
@@ -245,12 +454,29 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Washington Post", "url": "https://www.washingtonpost.com/sports/soccer/2026/06/09/world-cup-iran-fifa-tickets/" },
-        { "label": "Euronews", "url": "https://www.euronews.com/2026/06/09/iran-trains-in-mexico-as-us-world-cup-border-troubles-mount" },
-        { "label": "American Bazaar", "url": "https://americanbazaaronline.com/2026/06/09/iran-alleges-2026-fifa-world-cup-ticket-allocation-revoked-482477/" }
+        {
+          "label": "Washington Post",
+          "url": "https://www.washingtonpost.com/sports/soccer/2026/06/09/world-cup-iran-fifa-tickets/"
+        },
+        {
+          "label": "Euronews",
+          "url": "https://www.euronews.com/2026/06/09/iran-trains-in-mexico-as-us-world-cup-border-troubles-mount"
+        },
+        {
+          "label": "American Bazaar",
+          "url": "https://americanbazaaronline.com/2026/06/09/iran-alleges-2026-fifa-world-cup-ticket-allocation-revoked-482477/"
+        }
       ],
       "nouveau": true,
-      "tags": ["Iran", "billets", "tickets", "FFIRI", "discrimination", "diaspora", "8%"]
+      "tags": [
+        "Iran",
+        "billets",
+        "tickets",
+        "FFIRI",
+        "discrimination",
+        "diaspora",
+        "8%"
+      ]
     },
     {
       "id": 19,
@@ -263,11 +489,24 @@
       "severite": 3,
       "pays": "USA / Canada / Mexique",
       "sources": [
-        { "label": "Wikipedia — List of 2026 FIFA World Cup controversies", "url": "https://en.wikipedia.org/wiki/List_of_2026_FIFA_World_Cup_controversies" },
-        { "label": "The Conversation / Queen's University Belfast", "url": "https://theconversation.com/world-cup-2026-why-moving-games-to-evenings-isnt-enough-to-tackle-extreme-heat-problem-283410" }
+        {
+          "label": "Wikipedia — List of 2026 FIFA World Cup controversies",
+          "url": "https://en.wikipedia.org/wiki/List_of_2026_FIFA_World_Cup_controversies"
+        },
+        {
+          "label": "The Conversation / Queen's University Belfast",
+          "url": "https://theconversation.com/world-cup-2026-why-moving-games-to-evenings-isnt-enough-to-tackle-extreme-heat-problem-283410"
+        }
       ],
       "nouveau": true,
-      "tags": ["chaleur", "publicité", "pauses hydratation", "19 pays", "visa ban", "santé"]
+      "tags": [
+        "chaleur",
+        "publicité",
+        "pauses hydratation",
+        "19 pays",
+        "visa ban",
+        "santé"
+      ]
     },
     {
       "id": 18,
@@ -285,14 +524,36 @@
       "severite": 4,
       "pays": "USA / Canada / Mexique",
       "sources": [
-        { "label": "NPR", "url": "https://www.npr.org/2026/06/04/nx-s1-5742519/world-cup-fifa-hot-weather-risk-climate-miami" },
-        { "label": "Climate Central", "url": "https://www.climatecentral.org/climate-matters/world-cup-matches" },
-        { "label": "Bloomberg", "url": "https://www.bloomberg.com/graphics/2026-fifa-world-cup-games-weather/" },
-        { "label": "Sky Sports", "url": "https://www.skysports.com/football/news/12098/13549718/world-cup-2026-how-will-extreme-heat-impact-this-summers-tournament" },
-        { "label": "Inside Climate News", "url": "https://insideclimatenews.org/news/30052026/fifa-world-cup-extreme-heat/" }
+        {
+          "label": "NPR",
+          "url": "https://www.npr.org/2026/06/04/nx-s1-5742519/world-cup-fifa-hot-weather-risk-climate-miami"
+        },
+        {
+          "label": "Climate Central",
+          "url": "https://www.climatecentral.org/climate-matters/world-cup-matches"
+        },
+        {
+          "label": "Bloomberg",
+          "url": "https://www.bloomberg.com/graphics/2026-fifa-world-cup-games-weather/"
+        },
+        {
+          "label": "Sky Sports",
+          "url": "https://www.skysports.com/football/news/12098/13549718/world-cup-2026-how-will-extreme-heat-impact-this-summers-tournament"
+        },
+        {
+          "label": "Inside Climate News",
+          "url": "https://insideclimatenews.org/news/30052026/fifa-world-cup-extreme-heat/"
+        }
       ],
       "nouveau": false,
-      "tags": ["chaleur", "santé", "Kansas City", "Miami", "FIFPRO", "climate change"]
+      "tags": [
+        "chaleur",
+        "santé",
+        "Kansas City",
+        "Miami",
+        "FIFPRO",
+        "climate change"
+      ]
     },
     {
       "id": 17,
@@ -305,12 +566,28 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "NY Sports Day", "url": "https://www.nysportsday.com/2026/06/02/fifa-world-cup-2026-ticketing-scandal-ny-nj-investigation-metlife/" },
-        { "label": "Open Magazine / ABC News", "url": "https://openthemagazine.com/sports/why-is-fifa-facing-criticism-over-2026-world-cup-ticket-prices" },
-        { "label": "Time Magazine", "url": "https://time.com/article/2026/05/24/why-2026-world-cup-ticket-prices-are-so-high/" }
+        {
+          "label": "NY Sports Day",
+          "url": "https://www.nysportsday.com/2026/06/02/fifa-world-cup-2026-ticketing-scandal-ny-nj-investigation-metlife/"
+        },
+        {
+          "label": "Open Magazine / ABC News",
+          "url": "https://openthemagazine.com/sports/why-is-fifa-facing-criticism-over-2026-world-cup-ticket-prices"
+        },
+        {
+          "label": "Time Magazine",
+          "url": "https://time.com/article/2026/05/24/why-2026-world-cup-ticket-prices-are-so-high/"
+        }
       ],
       "nouveau": false,
-      "tags": ["billetterie", "MetLife", "subpoena", "dynamic pricing", "Letitia James", "fraude"]
+      "tags": [
+        "billetterie",
+        "MetLife",
+        "subpoena",
+        "dynamic pricing",
+        "Letitia James",
+        "fraude"
+      ]
     },
     {
       "id": 16,
@@ -328,13 +605,32 @@
       "severite": 3,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Sports Illustrated", "url": "https://www.si.com/soccer/metlife-stadium-2026-world-cup-final-stadium-slammed" },
-        { "label": "Yahoo Sports", "url": "https://sports.yahoo.com/soccer/article/why-some-club-world-cup-pitches-arent-great--and-what-that-means-for-the-2026-world-cup-015126909.html" },
-        { "label": "France 24", "url": "https://www.france24.com/en/2026-world-cup-are-us-stadiums-unprepared-viral-senegal-ball-bounce-clip-sparks-fearsa" },
-        { "label": "Scientific American", "url": "https://www.scientificamerican.com/article/how-fifa-is-engineering-natural-grass-for-the-2026-world-cup/" }
+        {
+          "label": "Sports Illustrated",
+          "url": "https://www.si.com/soccer/metlife-stadium-2026-world-cup-final-stadium-slammed"
+        },
+        {
+          "label": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/soccer/article/why-some-club-world-cup-pitches-arent-great--and-what-that-means-for-the-2026-world-cup-015126909.html"
+        },
+        {
+          "label": "France 24",
+          "url": "https://www.france24.com/en/2026-world-cup-are-us-stadiums-unprepared-viral-senegal-ball-bounce-clip-sparks-fearsa"
+        },
+        {
+          "label": "Scientific American",
+          "url": "https://www.scientificamerican.com/article/how-fifa-is-engineering-natural-grass-for-the-2026-world-cup/"
+        }
       ],
       "nouveau": false,
-      "tags": ["MetLife", "pelouse", "blessures", "Aaron Rodgers", "Sénégal", "finale"]
+      "tags": [
+        "MetLife",
+        "pelouse",
+        "blessures",
+        "Aaron Rodgers",
+        "Sénégal",
+        "finale"
+      ]
     },
     {
       "id": 15,
@@ -349,14 +645,27 @@
       "corps": "Uruguay manager Marcelo Bielsa delivered a scathing public indictment of Copa América 2024 organizers at an extraordinary press conference, calling them a 'plague of liars' over systematically substandard playing surfaces and training facilities. Bielsa stated Bolivia had been unable to train on one pitch, and claimed Argentina coach Lionel Scaloni had been 'threatened' into silence after criticizing the field at Atlanta's Mercedes-Benz Stadium. Eight of the 14 Copa América stadiums are scheduled as 2026 World Cup venues. Argentina goalkeeper Emiliano Martínez had already called the Atlanta surface a 'disaster' in the tournament opener.",
       "corps_fr": "L'entraîneur uruguayen Marcelo Bielsa a publiquement condamné les organisateurs de la Copa América 2024, les qualifiant de 'plaie de menteurs' à propos des surfaces et installations d'entraînement systématiquement sous-standard. Bielsa a affirmé que la Bolivie n'avait pu s'entraîner sur une pelouse, et que l'entraîneur argentin Lionel Scaloni avait été 'menacé' pour le faire taire après avoir critiqué le terrain du Mercedes-Benz Stadium d'Atlanta. Huit des 14 stades de la Copa América sont programmés comme sites de la Coupe du Monde 2026.",
       "categorie": "gouvernance",
-      "severite": 3,
+      "severite": 2,
       "pays": "États-Unis",
       "sources": [
-        { "label": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/40548890/uruguay-marcelo-bielsa-copa-america-2024-organizers-usa-players" },
-        { "label": "AOL / Washington Post wire", "url": "https://www.aol.com/uruguay-coach-marcelo-bielsa-blasts-215537571.html" }
+        {
+          "label": "ESPN",
+          "url": "https://www.espn.com/soccer/story/_/id/40548890/uruguay-marcelo-bielsa-copa-america-2024-organizers-usa-players"
+        },
+        {
+          "label": "AOL / Washington Post wire",
+          "url": "https://www.aol.com/uruguay-coach-marcelo-bielsa-blasts-215537571.html"
+        }
       ],
       "nouveau": false,
-      "tags": ["Bielsa", "pelouse", "Copa América", "Mercedes-Benz Stadium", "Scaloni", "Bolivie"]
+      "tags": [
+        "Bielsa",
+        "pelouse",
+        "Copa América",
+        "Mercedes-Benz Stadium",
+        "Scaloni",
+        "Bolivie"
+      ]
     },
     {
       "id": 14,
@@ -369,12 +678,28 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Al Jazeera", "url": "https://www.aljazeera.com/sports/2026/1/13/afcon-senegal-ivory-coast-fans-react-to-trumps-world-cup-2026-travel-bans" },
-        { "label": "The Guardian — travel ban Senegal & Côte d'Ivoire", "url": "https://www.theguardian.com/football/2025/dec/16/world-cup-travel-ban-senegal-cote-divoire" },
-        { "label": "Human Rights Watch", "url": "https://www.yahoo.com/news/fifa-urged-stand-against-donald-144007485.html" }
+        {
+          "label": "Al Jazeera",
+          "url": "https://www.aljazeera.com/sports/2026/1/13/afcon-senegal-ivory-coast-fans-react-to-trumps-world-cup-2026-travel-bans"
+        },
+        {
+          "label": "The Guardian — travel ban Senegal & Côte d'Ivoire",
+          "url": "https://www.theguardian.com/football/2025/dec/16/world-cup-travel-ban-senegal-cote-divoire"
+        },
+        {
+          "label": "Human Rights Watch",
+          "url": "https://www.yahoo.com/news/fifa-urged-stand-against-donald-144007485.html"
+        }
       ],
       "nouveau": false,
-      "tags": ["Sénégal", "Côte d'Ivoire", "Haïti", "travel ban", "supporters", "Infantino"]
+      "tags": [
+        "Sénégal",
+        "Côte d'Ivoire",
+        "Haïti",
+        "travel ban",
+        "supporters",
+        "Infantino"
+      ]
     },
     {
       "id": 13,
@@ -392,12 +717,28 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "Al Jazeera", "url": "https://www.aljazeera.com/sports/2026/6/7/irans-world-cup-squad-lands-in-mexico-amid-us-visa-row" },
-        { "label": "Front Office Sports", "url": "https://frontofficesports.com/travel-visa-issues-hang-over-world-cup/" },
-        { "label": "Council on Foreign Relations", "url": "https://www.cfr.org/articles/the-u-s-is-co-hosting-the-world-cup-but-much-of-the-world-cant-attend" }
+        {
+          "label": "Al Jazeera",
+          "url": "https://www.aljazeera.com/sports/2026/6/7/irans-world-cup-squad-lands-in-mexico-amid-us-visa-row"
+        },
+        {
+          "label": "Front Office Sports",
+          "url": "https://frontofficesports.com/travel-visa-issues-hang-over-world-cup/"
+        },
+        {
+          "label": "Council on Foreign Relations",
+          "url": "https://www.cfr.org/articles/the-u-s-is-co-hosting-the-world-cup-but-much-of-the-world-cant-attend"
+        }
       ],
       "nouveau": false,
-      "tags": ["Iran", "Arizona", "Mexique", "Mehdi Taj", "visa", "boycott"]
+      "tags": [
+        "Iran",
+        "Arizona",
+        "Mexique",
+        "Mehdi Taj",
+        "visa",
+        "boycott"
+      ]
     },
     {
       "id": 12,
@@ -415,12 +756,29 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "NPR", "url": "https://www.npr.org/2026/06/09/nx-s1-5851634/immigration-policies-affect-fifa" },
-        { "label": "Newsweek", "url": "https://www.newsweek.com/sports/ice-bag-searches-and-denied-visashow-world-cup-teams-welcomed-to-us-12048074" },
-        { "label": "Council on Foreign Relations", "url": "https://www.cfr.org/articles/the-u-s-is-co-hosting-the-world-cup-but-much-of-the-world-cant-attend" }
+        {
+          "label": "NPR",
+          "url": "https://www.npr.org/2026/06/09/nx-s1-5851634/immigration-policies-affect-fifa"
+        },
+        {
+          "label": "Newsweek",
+          "url": "https://www.newsweek.com/sports/ice-bag-searches-and-denied-visashow-world-cup-teams-welcomed-to-us-12048074"
+        },
+        {
+          "label": "Council on Foreign Relations",
+          "url": "https://www.cfr.org/articles/the-u-s-is-co-hosting-the-world-cup-but-much-of-the-world-cant-attend"
+        }
       ],
       "nouveau": true,
-      "tags": ["Irak", "Aymen Hussein", "Talal Salah", "Chicago", "O'Hare", "photographe", "détention"]
+      "tags": [
+        "Irak",
+        "Aymen Hussein",
+        "Talal Salah",
+        "Chicago",
+        "O'Hare",
+        "photographe",
+        "détention"
+      ]
     },
     {
       "id": 11,
@@ -438,13 +796,32 @@
       "severite": 5,
       "pays": "États-Unis",
       "sources": [
-        { "label": "ABC News", "url": "https://abcnews.com/International/world-cup-referee-somalia-denied-entry-us-due/story?id=133692969" },
-        { "label": "NPR", "url": "https://www.npr.org/2026/06/09/nx-s1-5851634/immigration-policies-affect-fifa" },
-        { "label": "Washington Post", "url": "https://www.washingtonpost.com/sports/soccer/2026/06/09/world-cup-referee-somalia-fifa-trump/" },
-        { "label": "The Globe and Mail", "url": "https://www.theglobeandmail.com/world/article-us-denied-entry-somali-world-cup-referee/" }
+        {
+          "label": "ABC News",
+          "url": "https://abcnews.com/International/world-cup-referee-somalia-denied-entry-us-due/story?id=133692969"
+        },
+        {
+          "label": "NPR",
+          "url": "https://www.npr.org/2026/06/09/nx-s1-5851634/immigration-policies-affect-fifa"
+        },
+        {
+          "label": "Washington Post",
+          "url": "https://www.washingtonpost.com/sports/soccer/2026/06/09/world-cup-referee-somalia-fifa-trump/"
+        },
+        {
+          "label": "The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/world/article-us-denied-entry-somali-world-cup-referee/"
+        }
       ],
       "nouveau": true,
-      "tags": ["Omar Artan", "Somalie", "arbitre", "Miami", "CAF", "travel ban"]
+      "tags": [
+        "Omar Artan",
+        "Somalie",
+        "arbitre",
+        "Miami",
+        "CAF",
+        "travel ban"
+      ]
     },
     {
       "id": 10,
@@ -457,11 +834,23 @@
       "severite": 4,
       "pays": "Mexique",
       "sources": [
-        { "label": "El País", "url": "https://elpais.com" },
-        { "label": "Reporters Without Borders", "url": "https://rsf.org" }
+        {
+          "label": "El País",
+          "url": "https://elpais.com"
+        },
+        {
+          "label": "Reporters Without Borders",
+          "url": "https://rsf.org"
+        }
       ],
       "nouveau": false,
-      "tags": ["Azteca", "Indias Verdes", "Mexico", "démolition", "relogement"]
+      "tags": [
+        "Azteca",
+        "Indias Verdes",
+        "Mexico",
+        "démolition",
+        "relogement"
+      ]
     },
     {
       "id": 9,
@@ -471,14 +860,26 @@
       "corps": "The University of Chicago published a meta-analysis of 28 previous World Cups showing that actual economic returns represent on average 20% of official estimates. FIFA promises $5 billion in returns to host cities — a projection economists of sport describe as disconnected from historical evidence. The Financial Times noted that infrastructure costs borne by local governments consistently exceed projections, while private profits flow primarily to FIFA and corporate sponsors.",
       "corps_fr": "L'Université de Chicago a publié une méta-analyse de 28 Coupes du Monde précédentes montrant que les retombées économiques réelles représentent en moyenne 20 % des estimations officielles. La FIFA promet 5 milliards de dollars de retombées aux villes hôtes — une projection que les économistes du sport qualifient de déconnectée des données historiques. Le Financial Times note que les coûts d'infrastructure supportés par les collectivités locales dépassent systématiquement les prévisions, tandis que les profits privés bénéficient principalement à la FIFA et à ses sponsors.",
       "categorie": "economie",
-      "severite": 3,
+      "severite": 2,
       "pays": "USA / Canada / Mexique",
       "sources": [
-        { "label": "University of Chicago Press", "url": "https://www.press.uchicago.edu" },
-        { "label": "Financial Times", "url": "https://www.ft.com" }
+        {
+          "label": "University of Chicago Press",
+          "url": "https://www.press.uchicago.edu"
+        },
+        {
+          "label": "Financial Times",
+          "url": "https://www.ft.com"
+        }
       ],
       "nouveau": false,
-      "tags": ["économie", "retombées", "5 milliards", "villes hôtes", "promesses"]
+      "tags": [
+        "économie",
+        "retombées",
+        "5 milliards",
+        "villes hôtes",
+        "promesses"
+      ]
     },
     {
       "id": 8,
@@ -491,11 +892,23 @@
       "severite": 3,
       "pays": "États-Unis",
       "sources": [
-        { "label": "ACLU — travel advisory", "url": "https://www.aclu.org/press-releases/over-120-civil-society-groups-issue-travel-advisory-for-u-s-ahead-of-fifa-world-cup" },
-        { "label": "ACLU — know your rights", "url": "https://www.aclu.org/campaigns-initiatives/the-2026-fifa-mens-world-cup-know-your-rights-know-your-risks" }
+        {
+          "label": "ACLU — travel advisory",
+          "url": "https://www.aclu.org/press-releases/over-120-civil-society-groups-issue-travel-advisory-for-u-s-ahead-of-fifa-world-cup"
+        },
+        {
+          "label": "ACLU — know your rights",
+          "url": "https://www.aclu.org/campaigns-initiatives/the-2026-fifa-mens-world-cup-know-your-rights-know-your-risks"
+        }
       ],
       "nouveau": false,
-      "tags": ["Texas", "Garde nationale", "militarisation", "profilage", "ACLU"]
+      "tags": [
+        "Texas",
+        "Garde nationale",
+        "militarisation",
+        "profilage",
+        "ACLU"
+      ]
     },
     {
       "id": 7,
@@ -508,11 +921,23 @@
       "severite": 3,
       "pays": "International",
       "sources": [
-        { "label": "Envoyé Spécial / France 2", "url": "https://www.france.tv" },
-        { "label": "L'Équipe", "url": "https://www.lequipe.fr" }
+        {
+          "label": "Envoyé Spécial / France 2",
+          "url": "https://www.france.tv"
+        },
+        {
+          "label": "L'Équipe",
+          "url": "https://www.lequipe.fr"
+        }
       ],
       "nouveau": false,
-      "tags": ["billetterie", "revente", "marché noir", "prix", "fraude"]
+      "tags": [
+        "billetterie",
+        "revente",
+        "marché noir",
+        "prix",
+        "fraude"
+      ]
     },
     {
       "id": 6,
@@ -525,11 +950,23 @@
       "severite": 4,
       "pays": "Mexique",
       "sources": [
-        { "label": "El Financiero", "url": "https://www.elfinanciero.com.mx" },
-        { "label": "Transparency International", "url": "https://www.transparency.org" }
+        {
+          "label": "El Financiero",
+          "url": "https://www.elfinanciero.com.mx"
+        },
+        {
+          "label": "Transparency International",
+          "url": "https://www.transparency.org"
+        }
       ],
       "nouveau": false,
-      "tags": ["Femexfut", "corruption", "commissions", "Mexique", "entraînement"]
+      "tags": [
+        "Femexfut",
+        "corruption",
+        "commissions",
+        "Mexique",
+        "entraînement"
+      ]
     },
     {
       "id": 5,
@@ -542,11 +979,24 @@
       "severite": 5,
       "pays": "États-Unis",
       "sources": [
-        { "label": "NPR — SoFi workers strike", "url": "https://www.npr.org/2026/06/06/nx-s1-5848682/sofi-stadium-strike-world-cup" },
-        { "label": "Prism Reports — gentrification", "url": "https://prismreports.org/2026/06/09/world-cup-gentrification-displacement/" }
+        {
+          "label": "NPR — SoFi workers strike",
+          "url": "https://www.npr.org/2026/06/06/nx-s1-5848682/sofi-stadium-strike-world-cup"
+        },
+        {
+          "label": "Prism Reports — gentrification",
+          "url": "https://prismreports.org/2026/06/09/world-cup-gentrification-displacement/"
+        }
       ],
       "nouveau": false,
-      "tags": ["travailleurs", "migrants", "décès", "chantiers", "stades", "OSHA"]
+      "tags": [
+        "travailleurs",
+        "migrants",
+        "décès",
+        "chantiers",
+        "stades",
+        "OSHA"
+      ]
     },
     {
       "id": 4,
@@ -556,14 +1006,26 @@
       "corps": "A Carbon Market Watch report estimates that organizing the World Cup across 3 countries will generate 3 to 4 times more emissions than Qatar 2022, due to travel distances between 16 host cities requiring extensive air travel. FIFA has published no credible carbon compensation plan. Climate researchers noted the irony of a tournament promoting sustainability while structurally requiring more intercontinental flights than any previous edition.",
       "corps_fr": "Un rapport de Carbon Market Watch estime que l'organisation de la Coupe du Monde dans 3 pays génèrera 3 à 4 fois plus d'émissions que le Qatar 2022, en raison des distances entre 16 villes hôtes nécessitant d'importants transports aériens. La FIFA n'a publié aucun plan crédible de compensation carbone. Des chercheurs climatiques ont noté l'ironie d'un tournoi promouvant la durabilité tout en nécessitant structurellement plus de vols intercontinentaux que toute édition précédente.",
       "categorie": "environnement",
-      "severite": 3,
+      "severite": 2,
       "pays": "USA / Canada / Mexique",
       "sources": [
-        { "label": "Carbon Market Watch", "url": "https://carbonmarketwatch.org/2024/12/20/fifas-foul-irresponsible-farcical-and-absurd-approach-to-the-climate/" },
-        { "label": "Carbon Market Watch (2026)", "url": "https://carbonmarketwatch.org/2026/06/10/fifa-fo-fum-magical-thinking-will-not-solve-world-cups-giant-climate-problem/" }
+        {
+          "label": "Carbon Market Watch",
+          "url": "https://carbonmarketwatch.org/2024/12/20/fifas-foul-irresponsible-farcical-and-absurd-approach-to-the-climate/"
+        },
+        {
+          "label": "Carbon Market Watch (2026)",
+          "url": "https://carbonmarketwatch.org/2026/06/10/fifa-fo-fum-magical-thinking-will-not-solve-world-cups-giant-climate-problem/"
+        }
       ],
       "nouveau": false,
-      "tags": ["carbone", "climat", "transport", "16 villes", "émissions"]
+      "tags": [
+        "carbone",
+        "climat",
+        "transport",
+        "16 villes",
+        "émissions"
+      ]
     },
     {
       "id": 3,
@@ -576,11 +1038,23 @@
       "severite": 4,
       "pays": "International",
       "sources": [
-        { "label": "Amnesty International", "url": "https://www.amnesty.org/en/latest/news/2024/04/global-fifa-sponsorship-deal-with-saudi-aramco-covering-world-cups-raises-human-rights-concerns/" },
-        { "label": "CBC Radio", "url": "https://www.cbc.ca/radio/whatonearth/fifa-world-cup-aramco-9.7224085" }
+        {
+          "label": "Amnesty International",
+          "url": "https://www.amnesty.org/en/latest/news/2024/04/global-fifa-sponsorship-deal-with-saudi-aramco-covering-world-cups-raises-human-rights-concerns/"
+        },
+        {
+          "label": "CBC Radio",
+          "url": "https://www.cbc.ca/radio/whatonearth/fifa-world-cup-aramco-9.7224085"
+        }
       ],
       "nouveau": false,
-      "tags": ["Aramco", "sportswashing", "Arabie Saoudite", "LGBTQ+", "droits humains"]
+      "tags": [
+        "Aramco",
+        "sportswashing",
+        "Arabie Saoudite",
+        "LGBTQ+",
+        "droits humains"
+      ]
     },
     {
       "id": 2,
@@ -598,11 +1072,23 @@
       "severite": 4,
       "pays": "États-Unis",
       "sources": [
-        { "label": "LA Times", "url": "https://www.latimes.com" },
-        { "label": "Miami Herald", "url": "https://www.miamiherald.com" }
+        {
+          "label": "LA Times",
+          "url": "https://www.latimes.com"
+        },
+        {
+          "label": "Miami Herald",
+          "url": "https://www.miamiherald.com"
+        }
       ],
       "nouveau": false,
-      "tags": ["expulsion", "logement", "Los Angeles", "Miami", "gentrification"]
+      "tags": [
+        "expulsion",
+        "logement",
+        "Los Angeles",
+        "Miami",
+        "gentrification"
+      ]
     },
     {
       "id": 1,
@@ -615,11 +1101,24 @@
       "severite": 5,
       "pays": "États-Unis",
       "sources": [
-        { "label": "The Guardian — $15,000 bond for African fans", "url": "https://www.theguardian.com/football/2026/mar/25/fans-and-players-from-five-african-world-cup-countries-face-15000-bond-to-enter-us" },
-        { "label": "Washington Post — immigration front line", "url": "https://www.washingtonpost.com/immigration/2026/06/08/how-world-cup-became-front-line-immigration-debate-us/" }
+        {
+          "label": "The Guardian — $15,000 bond for African fans",
+          "url": "https://www.theguardian.com/football/2026/mar/25/fans-and-players-from-five-african-world-cup-countries-face-15000-bond-to-enter-us"
+        },
+        {
+          "label": "Washington Post — immigration front line",
+          "url": "https://www.washingtonpost.com/immigration/2026/06/08/how-world-cup-became-front-line-immigration-debate-us/"
+        }
       ],
       "nouveau": false,
-      "tags": ["visa", "discrimination", "Sénégal", "Algérie", "supporters", "78%"]
+      "tags": [
+        "visa",
+        "discrimination",
+        "Sénégal",
+        "Algérie",
+        "supporters",
+        "78%"
+      ]
     }
   ]
 }
